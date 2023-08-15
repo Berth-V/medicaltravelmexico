@@ -84,35 +84,38 @@
     align-items: center;
     justify-content:center;
     text-align: center;
+    position: relative;
 }
 
-.travel__box{
-    height: 100vh;
-    width: 100vw;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows:auto;
+.airplane{
+    width: 80vw;
+    position: absolute;
+    top: 70px
 }
 
-.box__item{
+.travelimg1{
+ width: 20vw;
 }
 
-.box__item--span{
+.travelimg2{
+   width: 20vw;
+}
+
+.banner{
+    display: flex;
+    justify-content: space-around;
+    height: 50vh;
+    width: 65vw;
+    margin-top: 150px;
+}
+
+.travel__p{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 20vw;
+    border: 3px solid #0092A6;
     background-color: #44D9EE;
-}
-
-.box__item--text{
     font-size: 20px;
-    color: #525252;
+    padding: 15px;
 }
-
-.box__img{
-    object-fit: cover;
-    width: 100%;
-    height: 300px;
-}
-
-

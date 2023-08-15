@@ -4,14 +4,9 @@ import bariatric from '/bariatric icon.png';
 import oto from '/oto icon.png';
 import plastic from '/plastic icon.png';
 import trauma from '/trauma icon.png';
-import travel1 from '/travel1.jpg';
-import travel2 from '/travel2.jpg';
-import travel3 from '/travel3.jpg';
+import airplane from '/airplane.png';
 import travel4 from '/travel4.jpg';
-import travel5 from '/travel5.jpg';
-import travel6 from '/travel6.jpg';
-import travel7 from '/travel7.jpg';
-import travel8 from '/travel8.jpg';
+import travel3 from '/travel3.jpg';
 import {motion} from 'framer-motion';
 
 function Home() {
@@ -78,51 +73,24 @@ function Home() {
           </div>
         </section>
         <section  className='home__section3'>
-          <div className='travel__box'>
-            <div className='box__item'>
-              <img className='box__img'
-                src={travel1}
-              />
-            </div>
-            <div className='box__item'>
-              <img className='box__img'
-                src={travel7}
-              />
-            </div>
-            <div className='box__item'>
-              <img className='box__img'
-                src={travel3}
-              />
-            </div>
-            <div className='box__item'>
-              <img className='box__img'
-                src={travel4}
-              />
-            </div>
-            <div className='box__item--span'>
-             <span className='box__item--text'>
-               Travel to most touristic city's and beaches, enjoy a comfort place</span>
-            </div>
-            <div className='box__item'>
-              <img className='box__img'
-                src={travel5}
-              />
-            </div>
-            <div className='box__item'>
-              <img className='box__img'
-                src={travel6}
-              />
-            </div>
-            <div className='box__item'>
-              <img className='box__img'
-                src={travel2}
-              />
-            </div>
-            <div className='box__item'>
-              <img className='box__img'
-                src={travel8}
-              />
-            </div>
+          <img className='airplane'
+            src={airplane}
+            alt='travel airplane'
+          />
+          <div className='banner'>
+            <img className='travelimg1'
+              src={travel3} 
+              alt=""    
+            />
+            <p className='travel__p'>
+              <b>Travel to the most iconic places on Tj, SD, enjoy a comfortable place
+              and then come to us for help to you with your health  </b>
+              
+            </p>
+            <img className='travelimg2'
+              src={travel4} 
+              alt="" 
+            />
           </div>
         </section>
       </div>
