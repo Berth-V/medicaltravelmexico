@@ -17,20 +17,26 @@
   flex-wrap: wrap;
   height: auto;
   width: 70vw;
-  border: 1px solid red;
   justify-content: center;
 }
 
 .card{
     width: 460px;
     height: 50vh;
-    background-color: #00CAD1;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     margin: 10px;
+    /*background-color: #00CAD1;*/
+    background-color: #000;
+    color: #fafafa;
+    border: 2px solid #00CAD1;
+}
+
+.card:hover{
+    cursor: pointer;
 }
 
 .card__img{

@@ -6,6 +6,7 @@
   height: 75px;
   display: flex;
   justify-content:flex-end;
+  z-index: 100;
 }
 
 .nav__ul{

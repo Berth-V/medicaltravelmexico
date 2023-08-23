@@ -5,8 +5,8 @@ import oto from '/oto icon.png';
 import plastic from '/plastic icon.png';
 import trauma from '/trauma icon.png';
 import airplane from '/airplane.png';
-import travel4 from '/travel4.jpg';
-import travel3 from '/travel3.jpg';
+import travel7 from '/travel7.jpg';
+import travel8 from '/travel8.jpg';
 import {motion} from 'framer-motion';
 
 function Home() {
@@ -79,7 +79,7 @@ function Home() {
           />
           <div className='banner'>
             <img className='travelimg1'
-              src={travel3} 
+              src={travel7} 
               alt=""    
             />
             <p className='travel__p'>
@@ -88,7 +88,7 @@ function Home() {
               
             </p>
             <img className='travelimg2'
-              src={travel4} 
+              src={travel8} 
               alt="" 
             />
           </div>

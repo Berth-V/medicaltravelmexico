@@ -1,77 +1,94 @@
+import { NavLink } from 'react-router-dom';
 import './Procedures.css';
-import card from '/doctor card.jpeg';
+import card from '/dr hans.jpeg';
+
 
 function Procedures() {
   return (
     <div className='procedures'>
-      <h2 className='procedures__tittle'>Our Procedures</h2>
+      <h2 className='procedures__tittle'>Choose your Doctor</h2>
       <div className='cards__container'>
-        <div className='card'>
+        <NavLink className='card__link'
+          to='/bariatric'
+        >
+            <div className='card'>
           <img className='card__img'
             src={card}
           />
           <h3 className='speciality__tittle'>
-            Speciality
+            Bariatric
           </h3>
           <span className='doctor__name'>
-            Name
+            Dr. Hans Ruiz
           </span>
           <p className='card__p'>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet error 
             consectetur a accusantium porro impedit, est rerum? Tenetur vero 
             deleniti, provident officia
           </p>
-        </div>
-        <div className='card'>
+            </div>
+        </NavLink>
+        <NavLink className='card__link'
+          to='/plasticsurgery'
+        >
+            <div className='card'>
           <img className='card__img' 
             src={card}
           />
           <h3 className='speciality__tittle'>
-            Speciality
+            Plastic Surgery
           </h3>
           <span className='doctor__name'>
-            Name
+            Dr. Hans Ruiz
           </span>
           <p className='card__p'>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet error 
             consectetur a accusantium porro impedit, est rerum? Tenetur vero 
             deleniti, provident officia
           </p>
-        </div>
-        <div className='card'>
+            </div>
+        </NavLink>
+        <NavLink className='card__link'
+          to='/traumatology'>
+            <div className='card'>
           <img className='card__img'
             src={card}
           />
           <h3 className='speciality__tittle'>
-            Speciality
+            Traumatology
           </h3>
           <span className='doctor__name'>
-            Name
+            Dr. Hans Ruiz
           </span>
           <p className='card__p'>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet error 
             consectetur a accusantium porro impedit, est rerum? Tenetur vero 
             deleniti, provident officia
           </p>
-        </div>
-        <div className='card'>
+            </div>
+        </NavLink>
+        <NavLink className='card__link'
+          to='/otolaryngologist'>
+            <div className='card'>
           <img className='card__img'
             src={card}
           />
           <h3 className='speciality__tittle'>
-            Speciality
+            Otolaryngologist
           </h3>
           <span className='doctor__name'>
-            Name
+            Dr. Hans Ruiz
           </span>
           <p className='card__p'>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet error 
             consectetur a accusantium porro impedit, est rerum? Tenetur vero 
             deleniti, provident officia
           </p>
-        </div>
+            </div>
+        </NavLink> 
       </div>
     </div>
   )
 }
+
 export default Procedures;

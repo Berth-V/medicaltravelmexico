@@ -1,0 +1,248 @@
+.bariatric{
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bariatric__section1{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.doctor__card{
+    max-width: 1150px;
+    height: auto;
+}
+
+.doctor__img{
+    width: 360px;
+    float: left;
+    margin-right: 10px;
+}
+
+.doctor__procedure{
+    font-size: 30px;
+    text-decoration: underline #44D9EE;
+    text-align: center;
+}
+
+.doctor{
+    text-decoration: underline #44D9EE;
+}
+
+.doctor__description{
+    font-size: 20px;
+    padding: 10px;
+    border-bottom: 2px solid #44D9EE;
+}
+
+.bariatric__section2{
+    height: auto;
+    min-width: 80vw;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.sport__medicine{
+    height: 50vh;
+    width: 80vw;
+    text-align: center;
+}
+
+.sport__img{
+    width: 700px;
+    height: 100%;
+    float: left;
+}
+
+.text__container{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.sport__tittle{
+    font-size: 30px;
+    margin-top: -100px;
+    text-decoration: underline #44D9EE;
+}
+
+.sport__description{
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.spine__dorsal{
+    height: 50vh;
+    width: 80vw;
+    text-align: center;
+    display: flex;
+    margin-top: 100px;
+}
+
+.spine__text__container{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.spine__tittle{
+    font-size: 30px;
+    text-decoration: underline #44D9EE;
+}
+
+.spine__description{
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.spine__img{
+    width: 700px;
+    height: 100%;
+    float: right;
+}
+
+.bariatric__section3{
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #84DFEC;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.bariatric__h2{
+  font-size: 30px;
+  color: #5E5E5E;
+  font-weight: 500;
+}
+
+.bariatric__icon__box{
+    display: flex;
+    width: 1300px;
+    height: 80%;
+    justify-content: space-evenly;
+}
+
+.bariatric__item{
+    height: 100%;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.bariatric__icon{
+    color: #005989;
+    font-size: 45px;
+}
+
+.bariatric__icon--png{
+    width: 50px;
+}
+
+.bariatric__span{
+    color: #5E5E5E;
+    font-size: 24px;
+}
+
+.bariatric__icon__p{
+    display: inline;
+    font-size: 20px;
+    text-align: center;
+    color: #5E5E5E;
+}
+
+.form__container{
+    height: 85vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.form__h2{
+    font-size: 40px;
+}
+
+.form {
+    width: 35vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 60px;
+    grid-gap: 30px;
+    margin: 0 auto;
+  }
+  
+  .form__input {
+    padding: 5px;
+    font-size: 15px;
+    outline: none;
+    color: #000;
+    border: none;
+    border-bottom: 2px solid #000;
+    background-color: #fafafa;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .form__input:focus {
+    border: 2px solid #44D9EE;
+  }
+  
+  .form__input--message {
+    resize: none;
+    padding: 5px;
+    font-size: 15px;
+    color: #000;
+    border: none;
+    border-bottom: 2px solid #000;
+    background-color: #fafafa;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .form__input--message:focus {
+    outline: none;
+    border: 2px solid #44D9EE;
+  }
+  
+  .form__submit {
+    padding: 0;
+    font-size: 15px;
+    color: #000;
+    background-color: #44D9EE;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    width: 25vw;
+    margin: 0 auto;
+    transition: 0.4s;
+    cursor: pointer;
+  }
+  
+  .form__submit:hover {
+    background-color: transparent;
+    color: #44D9EE;
+    border: 2px solid #44D9EE;
+  }
+  
+  .form .result {
+    color: #000;
+    text-align: center;
+    font-size: 15px;
+  }
