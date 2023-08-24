@@ -20,8 +20,7 @@
     justify-content: space-evenly;
     width: 33vw;
     height: 45vh;
-    margin-right: 50px;
-    color: var(--thrid-color);
+    margin-right: 130px;
 }
 
 .home__h1{
@@ -32,7 +31,7 @@
 
 .home__p{
     font-size: 22px;
-    color: gray;
+    color: #525252;
 }
 
 .home__section2{
