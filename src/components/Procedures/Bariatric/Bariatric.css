@@ -32,7 +32,7 @@
     text-align: center;
 }
 
-.bariatric__name{
+.doctor{
     text-decoration: underline #44D9EE;
 }
 
@@ -44,76 +44,58 @@
 
 .bariatric__section2{
     height: auto;
-    min-width: 80vw;
+    width: 100vw;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-
-.first__branch{
-    height: 50vh;
-    width: 80vw;
-    text-align: center;
+.bariatric__approaches{
+    height: 80vh;
+    display: grid;    
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,40vh);
 }
 
-.branch__img{
-    width: 700px;
-    height: 100%;
-    float: left;
-}
-
-.text__container{
+.bariatric__approaches__item{
     display: flex;
-    height: 100%;
     flex-direction: column;
     justify-content: space-evenly;
-}
-
-.sport__tittle{
-    font-size: 30px;
-    margin-top: -100px;
-    text-decoration: underline #44D9EE;
-}
-
-.sport__description{
-    font-size: 22px;
-    display: flex;
     align-items: center;
-    padding: 15px;
-}
-
-.spine__dorsal{
-    height: 50vh;
-    width: 80vw;
+    width: 100%;
+    height: 100%;
     text-align: center;
-    display: flex;
-    margin-top: 100px;
+    color: #5E5E5E;
 }
 
-.spine__text__container{
-    display: flex;
+.bariatric__approaches__item:nth-child(2){
+    background-color: #84DFEC;
+}
+
+.bariatric__approaches__item:nth-child(5){
+    color: #fafafa;
+}
+
+.bariatric__approaches__img{
     height: 100%;
-    flex-direction: column;
-    justify-content: space-evenly;
+    width: 100%;
 }
 
-.spine__tittle{
-    font-size: 30px;
-    text-decoration: underline #44D9EE;
+.bariatric__approaches__tittle{
+    font-size: 29px;
+    margin-bottom: -50px;
 }
 
-.spine__description{
-    font-size: 22px;
+.bariatric__approaches__tittle:nth-child(2){
+    color: #fafafa;
+}
+
+.bariatric__approaches__p{
+    font-size: 19px;
     display: flex;
     align-items: center;
-    padding: 15px;
 }
 
-.spine__img{
-    width: 700px;
-    height: 100%;
-    float: right;
-}
 
 .bariatric__section3{
     width: 100vw;

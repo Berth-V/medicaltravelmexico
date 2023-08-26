@@ -1,60 +1,24 @@
 import './Bariatric.css';
 import hans from '/dr hans.jpeg';
-import sport from '/sport.jpg';
+import sport from '/sport3.jpg';
+import sport2 from '/sport2.jpg';
 import spine from '/spine.jpg'
+import spine2 from '/spine2.jpg'
 import spineicon from '/spine.png'
-import {useRef} from 'react';
-import {useInView} from 'framer-motion';
-import {motion} from 'framer-motion';
 import {GiSkeletalHand} from 'react-icons/gi';
 import {GiKneeCap} from 'react-icons/gi';
 
 function Bariatric() {
-  const ref = useRef();
-  const isInView = useInView(ref, {once:true, amount:0.4})
-  //Framer Motion Variants//
-  const secondCartAnimation={
-    start:{opacity: 0,x:100},
-    end:{
-      opacity:1, x:0,
-      transition:{staggerChildren:0.1}
-    }
-  }
-  const xAxisNegative={
-    start:{x:-1000},
-    end:{x:0}
-  }
-  const xAxisPositive={
-    start:{x:1000},
-    end:{x:0}
-  }
-
   return (
     <div className='bariatric'>
       <div className='bariatric__section1'>
-        <motion.div className='doctor__card'
-          variants={secondCartAnimation}
-          initial='start'
-          animate='end'
-        >
-          <motion.img className='doctor__img' src={hans}
-            variants={secondCartAnimation}
-          />
-          <motion.h2 className='doctor__procedure'
-            variants={secondCartAnimation}
-          >
-            Traumatology
-          </motion.h2>
-          <motion.h2 className='bariatric__name'
-            variants={secondCartAnimation}
-          >
-            Dr. Hans Ruiz
-          </motion.h2>
-          <motion.p className='doctor__description'
-            variants={secondCartAnimation}
-          >
+        <div className='doctor__card'>
+          <img className='doctor__img' src={hans}/>
+          <h2 className='doctor__procedure'>Traumatology</h2>
+          <h2 className='doctor'>Dr. Hans Ruiz</h2>
+          <p className='doctor__description'>
             Our surgerys changes lives.<br/>
-            I specialize in all kinds of pain management to give 
+            I specialize in pain management of all kinds to give 
             people a better quality of life and thus improve their days.<br/>
             From surgical procedures to relieve spinal pain to prosthetic 
             hip and knee replacement.<br/>
@@ -65,44 +29,43 @@ function Bariatric() {
             performed thousands of surgeries with a very low percentage of 
             complications.<br/>
             "You can always get better, you just have to find the right doctor."
-          </motion.p>
-        </motion.div>
+          </p>
+        </div>
       </div>
       <div className='bariatric__section2'>
-        <div className='first__branch'>
-          <div className='branch__img__container'>
-            <img className='branch__img' src={sport}/>
+        <div className='bariatric__approaches'>
+          <div className='bariatric__approaches__item'>
+            <img className='bariatric__approaches__img' src={sport}/>
           </div>
-          <div className='text__container'>
-          <motion.h2 className='sport__tittle'
-            variants={xAxisNegative}
-            initial='start'
-            animate='end'
-          >
-            Sport Medicine
-          </motion.h2>
-          <motion.p className='sport__description'
-            variants={xAxisNegative}
-            initial='start'
-            animate='end'
-          >
-            Prevention and treatment of injuries derived from sports practice.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores id cupiditate minus corrupti beatae nihil autem molestias odit quos voluptates.
-          </motion.p>  
+          <div className='bariatric__approaches__item'>
+            <h2 className='bariatric__approaches__tittle'>Sport Medicine</h2>
+            <p className='bariatric__approaches__p'>
+              Prevention and treatment of injuries derived from sports practice.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores id cupiditate minus corrupti beatae nihil autem molestias odit quos voluptates.
+            </p>  
           </div>
-        </div>
-        <div className='spine__dorsal'>
-          <div className='spine__text__container'>
-            <h2 className='spine__tittle'>Spine Dorsal</h2>
-            <p className='spine__description'>
+          <div className='bariatric__approaches__item'>
+            <img className='bariatric__approaches__img'
+              src={sport2}
+            />
+          </div>
+          <div className='bariatric__approaches__item'
+            style={{background:`url(${spine})  no-repeat center/100%`}}
+          >
+          </div>
+          <div className='bariatric__approaches__item'>
+            <h2 className='bariatric__approaches__tittle'>Spine Dorsal</h2>
+            <p className='bariatric__approaches__p'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, repellat quas laudantium reiciendis asperiores quaerat illo sint omnis vero magni vel veritatis fuga iure enim incidunt ipsa iste provident. Autem?
             </p>  
           </div>
-          <div className='spine__img__container'>
-            <img className='spine__img' src={spine}/>
+          <div className='bariatric__approaches__item'
+            style={{background:`url(${spine2})  no-repeat bottom/100%`}}
+          >
           </div>
         </div>
       </div>
+
       <div className='bariatric__section3'>
         <h2 className='bariatric__h2'>Top Surgerys</h2>
         <div className='bariatric__icon__box'>
