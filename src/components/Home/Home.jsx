@@ -7,26 +7,32 @@ import trauma from '/trauma icon.png';
 import airplane from '/airplane.png';
 import travel7 from '/travel7.jpg';
 import travel8 from '/travel8.jpg';
-import {motion} from 'framer-motion';
+import {motion, useInView} from 'framer-motion';
+import {useRef} from 'react';
+
 
 function Home() {
-
+  const ref = useRef();
+  const isInView = useInView(ref,{once:true,amount:0.4})
+  //Framer Motion Variants//
   const frontPageAnimations={
-    start: {y:-100,opacity:0},
-    end: {y:0,opacity:1,
+    start: {y:-100, opacity:0},
+    end: {y:0, opacity:1,
       transition:{
         staggerChildren:0.3,
         duration:0.6
       }
     }
   }
-
   const proceduresCardsAnimation={
-    start: {y:-100,opacity:0},
-    end: {y:0, opacity:1, rotateY: [0, 360, 0]
+    start: {y:-100, opacity:0},
+    end: {y:0, opacity:1, rotateY: [0, 360, 0],
+      transition:{
+        staggerChildren:0.3,
+        duration:0.6
+      }
     }
   }
-
   return (
       <div className="home">
         <section className='home__section1'
@@ -36,6 +42,7 @@ function Home() {
             variants={frontPageAnimations}
             initial='start'
             whileInView='end'
+            viewport={{once:true}}
           >
             <motion.h1 className='home__h1'
               variants={frontPageAnimations}
@@ -54,13 +61,18 @@ function Home() {
           </motion.div>
         </section>
         <section  className='home__section2'>
-          <motion.div className='box'>
+          <motion.div className='box'
+            variants={proceduresCardsAnimation}
+            initial='start'
+            whileInView='end'
+            viewport={{once:true}}
+          >
             <motion.div className='item'
               variants={proceduresCardsAnimation}
-              initial='start'
-              whileInView='end'
-              viewport={{amount:1,once:true}}
-              transition={{duration:0.5,delay:0}}
+              //initial='start'
+              //whileInView='end'
+              //viewport={{amount:1, once:true}}
+              //transition={{duration:0.5, delay:0}}
             >
               <img className='box__icon'
                 src={bariatric}
@@ -73,10 +85,10 @@ function Home() {
             </motion.div>
             <motion.div className='item'
               variants={proceduresCardsAnimation}
-              initial='start'
-              whileInView='end'
-              viewport={{amount:1,once:true}}
-              transition={{duration:0.5,delay:0.2}}
+              //initial='start'
+              //whileInView='end'
+              //viewport={{amount:1, once:true}}
+              //transition={{duration:0.5, delay:0.2}}
             >
               <img className='box__icon' 
                 src={trauma}
@@ -89,10 +101,10 @@ function Home() {
             </motion.div>
             <motion.div className='item'
               variants={proceduresCardsAnimation}
-              initial='start'
-              whileInView='end'
-              viewport={{amount:1,once:true}}
-              transition={{duration:0.5,delay:0.4}}
+              //initial='start'
+              //whileInView='end'
+              //viewport={{amount:1, once:true}}
+              //transition={{duration:0.5, delay:0.4}}
             >
               <img className='box__icon' 
                 src={plastic}
@@ -105,10 +117,10 @@ function Home() {
             </motion.div>
             <motion.div className='item'
               variants={proceduresCardsAnimation}
-              initial='start'
-              whileInView='end'
-              viewport={{amount:1,once:true}}
-              transition={{duration:0.5,delay:0.6}}
+              //initial='start'
+              //whileInView='end'
+              //viewport={{amount:1, once:true}}
+              //transition={{duration:0.5, delay:0.6}}
             >
               <img className='box__icon' 
                 src={oto}
@@ -121,11 +133,12 @@ function Home() {
             </motion.div>
           </motion.div>
         </section>
-        <section  className='home__section3'>
+        <section  className='home__section3'
+          ref={ref}
+        >
           <motion.img className='airplane'
-            initial={{x:-1700}}
-            whileInView={{x:0}}
-            transition={{duration:1,delay:0.5}}
+            animate={{ x: isInView  ? 0 : -2000}}
+            transition={{duration:1, delay:0.5}}
             viewport={{once:true}}
             src={airplane}
             alt='travel airplane'

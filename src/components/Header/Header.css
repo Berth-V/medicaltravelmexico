@@ -3,10 +3,18 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 75px;
+  height: 60px;
   display: flex;
   justify-content:flex-end;
   z-index: 100;
+  background-color: #262626;
+}
+
+.logo{
+  height: 32px;
+  position: absolute;
+  left: 15px;
+  top: 15px;
 }
 
 .nav__ul{
@@ -46,6 +54,6 @@
 
 .nav__span{
   font-size: 18px;
-  color: #525252;
+  color: #fcfcfc;
 }
 

@@ -8,7 +8,7 @@ function About() {
     <div className='about'>
         <div className='about__description'>
           <h1 className='about__h1'>
-            About Medical Travel Mexico
+            About Medical Travel México
           </h1>
           <p className='about__p'>
            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sunt repellat dicta! 

@@ -1,5 +1,5 @@
 .home{
-    height: 300vh;
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -77,7 +77,7 @@
 }
 
 .home__section3{
-    height: 95vh;
+    height: calc(100vh - 60px);
     width: 100vw;
     display: flex;
     align-items: center;
@@ -89,7 +89,7 @@
 .airplane{
     width: 80vw;
     position: absolute;
-    top: 70px;
+    top: 10vh;
 }
 
 .travelimg1{
@@ -105,7 +105,7 @@
     justify-content: space-around;
     height: 50vh;
     width: 65vw;
-    margin-top: 150px;
+    margin-top: 25vh;
 }
 
 .travel__p{

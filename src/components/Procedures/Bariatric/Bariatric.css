@@ -32,7 +32,7 @@
     text-align: center;
 }
 
-.doctor{
+.bariatric__name{
     text-decoration: underline #44D9EE;
 }
 
@@ -50,13 +50,13 @@
 }
 
 
-.sport__medicine{
+.first__branch{
     height: 50vh;
     width: 80vw;
     text-align: center;
 }
 
-.sport__img{
+.branch__img{
     width: 700px;
     height: 100%;
     float: left;

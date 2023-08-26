@@ -1,7 +1,7 @@
 .procedures{
   display: flex;
   flex-direction: column;
-  height: 125vh;
+  height: calc(100vh - 60px);
   width: 100vw;
   align-items: center;
   justify-content: space-evenly;
@@ -22,7 +22,7 @@
 
 .card{
     width: 460px;
-    height: 50vh;
+    height: 38vh;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -40,8 +40,8 @@
 }
 
 .card__img{
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
     border-radius: 15px;
 }
 
@@ -55,5 +55,5 @@
 
 .card__p{
     text-align: center;
-    margin: 0 10px;
+    margin: 0 25px;
 }
