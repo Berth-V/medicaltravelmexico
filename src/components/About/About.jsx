@@ -1,52 +1,58 @@
 import './About.css';
-import mission from '/mission.png';
-import vision from '/vision.png';  
-import valors from '/valors.png';  
+import mission from '/mission.avif';
+import vision from '/vision.avif';  
 
 function About() {
   return (
     <div className='about'>
-        <div className='about__description'>
-          <h1 className='about__h1'>
-            About Medical Travel México
-          </h1>
-          <p className='about__p'>
-           Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sunt repellat dicta! 
-           Architecto numquam blanditiis vel sint nam voluptatem. Possimus tempore adipisci 
-           delectus nostrum nulla ullam culpa incidunt. Vero, beatae. Quod, qui soluta placeat at 
-           expedita provident eaque rerum magni facere iste! Blanditiis, natus sed quos reiciendis, 
-           itaque quas maiores consectetur omnis quidem pariatur adipisci dolore neque. Cumque, impedit soluta.         
-          </p>
-       </div>
-       <div className='mission__description'>
+      <div className='about__description'>
+        <h1 className='about__h1'>
+          About Medical Travel México
+        </h1>
+        <p className='about__p'>
+          Medical Travel Mexico is a binational medical
+          travel facilitation company founded in the city 
+          of Tijuana, Baja Caligornia.<br/>
+            How We Achieve It:<br/>
+            - We listen to the needs of customers.<br/>
+            - We are present throughout the process so that 
+              the patient feels accompanied.<br/>
+            - We establish accurate communication between the  
+              client, the doctors and the clinic before the trip 
+              begins.<br/>
+            - We offer high quality doctors with certified  
+              medical facilities.<br/>
+            - We have alliances with the best tourist providers.
+        </p>
+      </div>
+      <div className='mission__description'>
         <div  className='mission__item'>
           <h3 className='mission__h3'>Mission</h3>
           <p className='mission__p'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolores et cum itaque nostrum 
-            officiis maiores vel molestias. A dicta sequi, minima sint iste ab, ea molestias ipsum voluptates 
-            illum similique consequuntur obcaecati odio rem.
+            The goal of Medical Travel Mexico is to make the best 
+            specialists available to medical tourists for their needs, 
+            giving added value to their trip through the planning 
+            and organization of their health trip, making them feel 
+            accompanied and guided throughout their entire journey stay. 
+            We work to exceed expectations and create a relaxed and 
+            confident environment in your medical care.
           </p>
           <img className='mission__img' src={mission}/>
         </div>
         <div  className='mission__item'>
           <h3 className='mission__h3'>Vision</h3>
           <p className='mission__p'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolores et cum itaque nostrum 
-            officiis maiores vel molestias. A dicta sequi, minima sint iste ab, ea molestias ipsum voluptates 
-            illum similique consequuntur obcaecati odio rem.
+            Consolidate ourselves in the national and international market 
+            and expand the network of doctors to provide patients who travel 
+            for medical tourism with more high-quality medical alternatives, 
+            meeting their expectations, offering them more personalized 
+            services, tailored to each medical tourist, to offer them a 
+            safe, responsible and innovative service with competitive rates 
+            in the market.
           </p>
           <img className='mission__img' src={vision}/>
         </div>
-      <div  className='mission__item'>
-        <h3 className='mission__h3'>Valors</h3>
-        <p className='mission__p'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolores et cum itaque nostrum 
-          officiis maiores vel molestias. A dicta sequi, minima sint iste ab, ea molestias ipsum voluptates 
-          illum similique consequuntur obcaecati odio rem.
-        </p>
-        <img className='mission__img' src={valors}/>
-        </div>
-       </div>
+      </div>
     </div>
   )
 }

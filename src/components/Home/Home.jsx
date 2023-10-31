@@ -1,166 +1,257 @@
-import './Home.css';
-import portada from '/portada.jpg';
-import bariatric from '/bariatric icon.png';
-import oto from '/oto icon.png';
-import plastic from '/plastic icon.png';
-import trauma from '/trauma icon.png';
-import airplane from '/airplane.png';
-import travel7 from '/travel7.jpg';
-import travel8 from '/travel8.jpg';
-import {motion, useInView} from 'framer-motion';
-import {useRef} from 'react';
-
+import "./Home.css";
+import portada from "/portada.avif";
+import bariatric from "/bariatric icon.png";
+import oto from "/oto icon.png";
+import plastic from "/plastic icon.png";
+import trauma from "/trauma icon.png";
+import airplane from "/airplane.png";
+import travel7 from "/travel7.avif";
+import travel8 from "/travel8.avif";
+import hotel from "/hotel.avif";
+import bonus from "/bonus.avif";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+import { IoLogoWhatsapp, IoIosMail } from "react-icons/io";
+import { AiFillInstagram } from "react-icons/ai";
 
 function Home() {
   const ref = useRef();
-  const isInView = useInView(ref,{once:true,amount:0.4})
+  const isInView = useInView(ref, { once: true, amount: 0.4 });
   //Framer Motion Variants//
-  const frontPageAnimations={
-    start: {y:-100, opacity:0},
-    end: {y:0, opacity:1,
-      transition:{
-        staggerChildren:0.3,
-        duration:0.6
-      }
-    }
-  }
-  const proceduresCardsAnimation={
-    start: {y:-100, opacity:0},
-    end: {y:0, opacity:1, rotateY: [0, 360, 0],
-      transition:{
-        staggerChildren:0.3,
-        duration:0.6
-      }
-    }
-  }
+  const frontPageAnimations = {
+    start: { y: -100, opacity: 0 },
+    end: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.3,
+      },
+    },
+  };
+  const proceduresCardsAnimation = {
+    start: { y: -100, opacity: 0 },
+    end: {
+      y: 0,
+      opacity: 1,
+      rotateY: [0, 360, 0],
+      transition: {
+        staggerChildren: 0.4,
+        duration: 0.6,
+      },
+    },
+  };
   return (
-      <div className="home">
-        <section className='home__section1'
-          style={{background:`url(${portada}) no-repeat left/90% #FCFCFC`}}
+    <div className="home">
+      <section
+        className="home__section1"
+        style={{
+          background: `url(${portada}) no-repeat var(--home--backfround-pos)/var(--home-frontpage-size) #FCFCFC`,
+        }}
+      >
+        <motion.div
+          className="home__textBox"
+          variants={frontPageAnimations}
+          initial="start"
+          whileInView="end"
+          viewport={{ once: true }}
         >
-          <motion.div className='home__textBox'
+          <motion.h1 className="home__h1" variants={frontPageAnimations}>
+            We are interested in your well-being
+          </motion.h1>
+          <motion.p className="home__p" variants={frontPageAnimations}>
+            -Save up to 70% in any process
+          </motion.p>
+          <motion.p className="home__p" variants={frontPageAnimations}>
+            -Certified Doctors
+          </motion.p>
+          <motion.p className="home__p" variants={frontPageAnimations}>
+            -Faster Response
+          </motion.p>
+          <motion.p className="home__p" variants={frontPageAnimations}>
+            -Completely personalized attention to each patient
+          </motion.p>
+          <motion.p className="home__p" variants={frontPageAnimations}>
+            -Optional Travel Packages for pre or post-op
+          </motion.p>
+          <motion.p className="home__p" variants={frontPageAnimations}>
+            US: +1 855 997 98 78
+          </motion.p>
+          <motion.p className="home__p" variants={frontPageAnimations}>
+            MX: +52 668 275 09 77
+          </motion.p>
+          <motion.div
+            className="home__icon__box"
             variants={frontPageAnimations}
-            initial='start'
-            whileInView='end'
-            viewport={{once:true}}
           >
-            <motion.h1 className='home__h1'
-              variants={frontPageAnimations}
+            <a
+              className="home__icon__link"
+              href="mailto:travelmedicalmx@gmail.com"
+              target="_blank"
             >
-              Lorem ipsum dolor sit amet consectetur.
-            </motion.h1>
-            <motion.p className='home__p'
-              variants={frontPageAnimations}
+              <div className="home__icon__container">
+                <IoIosMail className="home__icon" />
+                <span className="home__icon__span">E-Mail</span>
+              </div>
+            </a>
+            <a
+              className="home__icon__link"
+              href="https://wa.me/526981032939"
+              target="_blank"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Atque doloribus quam consequatur beatae voluptas id voluptatibus 
-              ratione magni culpa omnis, deleniti recusandae ut ullam, maiores 
-              laboriosam assumenda, velit facilis dignissimos.
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </motion.p>
+              <div className="home__icon__container">
+                <IoLogoWhatsapp className="home__icon" />
+                <span className="home__icon__span">Whatsapp</span>
+              </div>
+            </a>
+            <a
+              className="home__icon__link"
+              href="https://www.instagram.com/medical.travel.mx/"
+              target="_blank"
+            >
+              <div className="home__icon__container">
+                <AiFillInstagram className="home__icon" />
+                <span className="home__icon__span">Instagram</span>
+              </div>
+            </a>
           </motion.div>
-        </section>
-        <section  className='home__section2'>
-          <motion.div className='box'
-            variants={proceduresCardsAnimation}
-            initial='start'
-            whileInView='end'
-            viewport={{once:true}}
-          >
-            <motion.div className='item'
-              variants={proceduresCardsAnimation}
-              //initial='start'
-              //whileInView='end'
-              //viewport={{amount:1, once:true}}
-              //transition={{duration:0.5, delay:0}}
-            >
-              <img className='box__icon'
-                src={bariatric}
-              />
-              <h3>BARIATRIC</h3>
-              <p className='box__parraph'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-              Doloremque ipsam aspernatur veritatis modi commodi, quia 
-              facere temporibus voluptatem dolorum maxime? Et enim harum 
-              nihil saepe rem esse hic. Architecto, laborum.</p>
-            </motion.div>
-            <motion.div className='item'
-              variants={proceduresCardsAnimation}
-              //initial='start'
-              //whileInView='end'
-              //viewport={{amount:1, once:true}}
-              //transition={{duration:0.5, delay:0.2}}
-            >
-              <img className='box__icon' 
-                src={trauma}
-              />
-              <h3>TRAUMATOLOGY</h3>
-              <p className='box__parraph'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-              Doloremque ipsam aspernatur veritatis modi commodi, quia 
-              facere temporibus voluptatem dolorum maxime? Et enim harum 
-              nihil saepe rem esse hic. Architecto, laborum.</p>
-            </motion.div>
-            <motion.div className='item'
-              variants={proceduresCardsAnimation}
-              //initial='start'
-              //whileInView='end'
-              //viewport={{amount:1, once:true}}
-              //transition={{duration:0.5, delay:0.4}}
-            >
-              <img className='box__icon' 
-                src={plastic}
-              />
-              <h3>PLASTIC SURGERY</h3>
-              <p className='box__parraph'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-              Doloremque ipsam aspernatur veritatis modi commodi, quia 
-              facere temporibus voluptatem dolorum maxime? Et enim harum 
-              nihil saepe rem esse hic. Architecto, laborum.</p>
-            </motion.div>
-            <motion.div className='item'
-              variants={proceduresCardsAnimation}
-              //initial='start'
-              //whileInView='end'
-              //viewport={{amount:1, once:true}}
-              //transition={{duration:0.5, delay:0.6}}
-            >
-              <img className='box__icon' 
-                src={oto}
-              />
-              <h3>OTOLARYNGOLOGIST</h3>
-              <p className='box__parraph'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-              Doloremque ipsam aspernatur veritatis modi commodi, quia 
-              facere temporibus voluptatem dolorum maxime? Et enim harum 
-              nihil saepe rem esse hic. Architecto, laborum.</p>
-            </motion.div>
-          </motion.div>
-        </section>
-        <section  className='home__section3'
-          ref={ref}
+        </motion.div>
+      </section>
+      <section className="home__section2">
+        <motion.div
+          className="box"
+          variants={proceduresCardsAnimation}
+          initial="start"
+          whileInView="end"
+          viewport={{ once: true, amount: 0.7 }}
         >
-          <motion.img className='airplane'
-            animate={{ x: isInView  ? 0 : -2000}}
-            transition={{duration:1, delay:0.5}}
-            viewport={{once:true}}
-            src={airplane}
-            alt='travel airplane'
-          />
-          <div className='banner'>
-            <img className='travelimg1'
-              src={travel7} 
-              alt=""    
-            />
-            <p className='travel__p'>
-              <b>Travel to the most iconic places on Tj, SD, enjoy a comfortable place
-              and then come to us for help to you with your health  </b>
-              
+          <motion.div className="item" variants={proceduresCardsAnimation}>
+            <img className="box__icon" src={bariatric} />
+            <h3 className="box__h3">BARIATRIC</h3>
+            <p className="box__parraph">
+              Bariatric Surgery is the set of surgical procedures performed with
+              the aim of helping you lose weight and improve obesity-related
+              diseases. And it is currently the treatment against obesity with
+              the best results in weight loss and long-term weight maintenance.
             </p>
-            <img className='travelimg2'
-              src={travel8} 
-              alt="" 
-            />
-          </div>
-        </section>
-      </div>
-  )
+          </motion.div>
+          <motion.div className="item" variants={proceduresCardsAnimation}>
+            <img className="box__icon" src={trauma} />
+            <h3 className="box__h3">TRAUMATOLOGY</h3>
+            <p className="box__parraph">
+              Traumatology is used to the study and treatment of traumatic
+              injuries that affect the musculoskeletal system, which includes
+              the bones, spinal dorsal, joints, ligaments, tendons and muscles,
+              it also deals with injuries to the joints, which may include
+              dislocations and ligament and cartilage injuries.
+            </p>
+          </motion.div>
+          <motion.div className="item" variants={proceduresCardsAnimation}>
+            <img className="box__icon" src={plastic} />
+            <h3 className="box__h3">PLASTIC SURGERY</h3>
+            <p className="box__parraph">
+              Plastic Surgery is a medical specialty that, through various
+              surgical techniques and also non-surgical procedures, corrects
+              functional or anatomical alterations of the body, caused by
+              defects -congenital or acquired- and by changes of age or physical
+              texture. The foregoing, in order to improve or restore
+              functionality and also personal appearance.
+            </p>
+          </motion.div>
+          <motion.div className="item" variants={proceduresCardsAnimation}>
+            <img className="box__icon" src={oto} />
+            <h3 className="box__h3">OTOLARYNGOLOGIST</h3>
+            <p className="box__parraph">
+              Otorhinolaryngology is the medical specialty that is responsible
+              for the prevention, diagnosis and treatment, both medical and
+              surgical, of diseases that affect the upper respiratory tract
+              (nasal cavities, mouth, pharynx, larynx), the ear and the proximal
+              structures of the face and neck.
+            </p>
+          </motion.div>
+        </motion.div>
+      </section>
+      <section className="bonus__home">
+        <motion.div
+          className="bonus__container"
+          initial={{ opacity: 0, y: -100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3 }}
+          viewport={{ once: true, amount: 0.9 }}
+        >
+          <h2 className="bonus__h2">Why Come Abroad?</h2>
+          <br />
+          <p className="bonus__p">
+            -High Health Care Costs in Developed Countries
+            <br />
+            -Ease and Accessibility of International Travel
+            <br />
+            -Global Standards of Care and Technological Advances
+            <br />
+            -Communication Improvements
+            <br />
+            -Complications with health insurance
+            <br />
+            <br />
+            People choose to seek medical treatment abroad due to the high costs
+            of healthcare in their home countries, the ease of traveling
+            internationally, rising global healthcare standards, and improved
+            communications. Limited health insurance also plays an important
+            role, as costs rise and coverage declines, medical tourism becomes
+            an affordable alternative.
+          </p>
+        </motion.div>
+        <hr className="bonus__hr" />
+        <img className="bonus__img" src={bonus} />
+      </section>
+      <section className="home__section3" ref={ref}>
+        <motion.img
+          className="airplane"
+          animate={{ x: isInView ? 0 : -2000 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          viewport={{ once: true }}
+          src={airplane}
+          alt="travel airplane"
+        />
+        <div className="banner">
+          <img className="travelimg1" src={travel7} alt="" />
+          <p className="travel__p">
+            <b>
+              Travel to the most iconic places on Tj, SD, enjoy a comfortable
+              place and then come to us for help to you with your health{" "}
+            </b>
+          </p>
+          <img className="travelimg2" src={travel8} alt="" />
+        </div>
+      </section>
+      <section className="home__section4">
+        <div
+          className="section4__background"
+          style={{
+            background: `url(${hotel}) no-repeat center/var(--section4-background-size)`,
+          }}
+        >
+          <motion.div
+            className="section4__container"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.3, delay: 0.4 }}
+            viewport={{ once: true, amount: 1 }}
+          >
+            <h2 className="section4__h2">How is traveling with us?</h2>
+            <p className="section4__p">
+              The packages are completely personalized, regardless of whether
+              you only want to temporarily lodging to solve your health, or if
+              you decide to get a tour to any of our destinations.
+              <br />
+              You are free to choose if you want a "doctor visit + travel
+              package", just visit the doctor, or just travel, we take care of
+              you from the moment you leave your city.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+    </div>
+  );
 }
 
 export default Home;

@@ -1,6 +1,6 @@
 .oto{
     display: flex;
-    width: auto;
+    width: 100vw;
     height: auto;
     flex-direction: column;
     justify-content: center;
@@ -15,109 +15,36 @@
     align-items: center;
 }
 
-.doctor__card{
+.oto__card{
     max-width: 1150px;
     height: auto;
+    border-bottom: 2px solid #44D9EE;
 }
 
-.doctor__img{
+.oto__img{
     width: 360px;
     float: left;
     margin-right: 10px;
 }
 
-.doctor__procedure{
+.oto__procedure{
     font-size: 30px;
     text-decoration: underline #44D9EE;
     text-align: center;
 }
 
-.doctor{
+.oto__name{
     text-decoration: underline #44D9EE;
 }
 
-.doctor__description{
+.oto__description{
     font-size: 20px;
-    padding: 10px;
-    border-bottom: 2px solid #44D9EE;
+    padding: 0 10px;
 }
 
 .oto__section2{
-    height: auto;
-    min-width: 80vw;
-    display: flex;
-    flex-direction: column;
-}
-
-
-.sport__medicine{
-    height: 50vh;
-    width: 80vw;
-    text-align: center;
-}
-
-.sport__img{
-    width: 700px;
-    height: 100%;
-    float: left;
-}
-
-.text__container{
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.sport__tittle{
-    font-size: 30px;
-    margin-top: -100px;
-    text-decoration: underline #44D9EE;
-}
-
-.sport__description{
-    font-size: 22px;
-    display: flex;
-    align-items: center;
-    padding: 15px;
-}
-
-.spine__dorsal{
-    height: 50vh;
-    width: 80vw;
-    text-align: center;
-    display: flex;
-    margin-top: 100px;
-}
-
-.spine__text__container{
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.spine__tittle{
-    font-size: 30px;
-    text-decoration: underline #44D9EE;
-}
-
-.spine__description{
-    font-size: 22px;
-    display: flex;
-    align-items: center;
-    padding: 15px;
-}
-
-.spine__img{
-    width: 700px;
-    height: 100%;
-    float: right;
-}
-
-.oto__section3{
     width: 100vw;
-    height: 50vh;
+    height: 100vh;
     background-color: #84DFEC;
     display: flex;
     justify-content: center;
@@ -125,39 +52,523 @@
     margin-top: 100px;
 }
 
-.icon__box{
+.oto__icon__box{
     display: flex;
     width: 1300px;
-    height: 90%;
+    height: 80%;
     justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.trauma__item{
-    height: 100%;
-    width: 250px;
+.oto__item{
+    height: 35vh;
+    width: 20vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
 }
 
-.trauma__icon{
+.oto__icon{
     color: #005989;
-    font-size: 45px;
+    width: 60px;
+    margin-bottom: 10px;
 }
 
-.trauma__icon--png{
-    width: 50px;
-}
-
-.trauma__span{
+.oto__span{
     color: #5E5E5E;
     font-size: 24px;
+    margin-top: 10px;
 }
 
-.icon__p{
+.oto__item__text{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.oto__icon__p{
     display: inline;
     font-size: 20px;
     text-align: center;
     color: #5E5E5E;
+}
+
+.oto__section3{
+    height: 120vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.oto__approaches{
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,40vh);
+}
+
+.oto__approaches__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.oto__approaches__item:nth-child(2),
+.oto__approaches__item:nth-child(8){
+    color: #fafafa;
+}
+
+.oto__approaches__item:nth-child(5){
+    background-color: #84DFEC;
+    color: #5E5E5E;
+}
+
+.oto__approaches__img{
+    height: 100%;
+    width: 100%;
+}
+
+.oto__approaches__tittle{
+    font-size: 29px;
+    margin-bottom: -50px;
+}
+
+.oto__approaches__p{
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+}
+
+.oto__contact{
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #44D9EE;
+}
+
+.oto__contact__h2{
+    color: #000000;
+    font-size: 45px;
+    margin-bottom: 10vh;
+    text-decoration: underline 3px solid #005989;
+}
+
+.oto__contact__container{
+    display: flex;
+    justify-content: space-evenly;
+    height: auto;
+    width: 35vw;
+    border: 2px solid #005989;
+    border-radius: 15px;
+}
+
+.oto__contact__item{
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    transition-duration: 0.2s;
+}
+
+.oto__contact__item:hover{
+    color:#fafafa;
+}
+
+.oto__contact__icon{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.oto__contact__span{
+    font-size: 17px;
+}
+
+@media screen and (max-width: 1700px) {
+
+    .oto__section2{
+        height: 110vh;
+    }
+
+    .oto__item{
+        width: 25vw;
+    }
+
+    .oto__icon__box{
+        width: 80vw;
+        height: 90%;
+    }
+
+    .oto__span{
+        font-size: 23px;
+    }
+
+    .oto__icon__p{
+        font-size: 19px;
+    }
+
+    .oto__approaches__p{
+        font-size: 19px;
+        padding: 0 10px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 1500px) {
+
+    .oto__img{
+        width: 340px;
+    }
+
+    .oto__procedure{
+        font-size: 28px;
+    }
+
+    .oto__doctor__name{
+        font-size: 22px;
+    }
+
+    .oto__description{
+        font-size: 18px;
+    }
+
+    .oto__span{
+        font-size: 22px;
+    }
+
+    .oto__icon__p{
+        font-size: 18px;
+    }
+
+    .oto__approaches__tittle{
+        font-size: 25px;
+    }
+    
+    .oto__approaches__p{
+        font-size: 17px;
+    }
+
+    .oto__contact__icon{
+        font-size: 33px;
+    }
+    
+    .oto__contact__span{
+        font-size: 15px;
+    }
+
+    .oto__contact__h2{
+        font-size: 42px;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    .oto__card{
+        width: 95vw;
+    }
+
+    .oto__img{
+        width: 300px;
+    }
+
+    .oto__procedure{
+        font-size: 26px;
+    }
+
+    .oto__doctor__name{
+        font-size: 20px;
+    }
+
+    .oto__description{
+        font-size: 16px;
+    }
+
+    .oto__icon__box{
+        width: 95vw;
+    }
+
+    .oto__item{
+        width: 25vw;
+    }
+
+    .oto__icon{
+        height: 70px;
+    }
+
+    .oto__span{
+        font-size: 22px;
+    }
+
+    .oto__icon__p{
+        font-size: 18px;
+    }
+
+    .oto__approaches__tittle{
+        font-size: 23px;
+    }
+    
+    .oto__contact__icon{
+        font-size: 31px;
+    }
+    
+    .oto__contact__span{
+        font-size: 14px;
+    }
+
+    .oto__contact__h2{
+        font-size: 40px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .oto__img{
+        height: 330px;
+    }
+
+    .oto__procedure{
+        font-size: 24px;
+    }
+
+    .oto__doctor__name{
+        font-size: 19px;
+    }
+
+    .oto__description{
+        font-size: 15px;
+    }
+    
+    .oto__section2{
+        height: 1100px;
+    }
+
+    .oto__item{
+        width: 30vw;
+    }
+
+    .oto__icon{
+        height: 60px;
+    }
+
+    .oto__span{
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    .oto__icon__p{
+        font-size: 16px;
+    }
+
+    .oto__section3{
+        height: 90vh;
+    }
+
+    .oto__approaches{
+        height: 90vh;
+        grid-template-rows: repeat(3,30vh);
+    }
+
+    .oto__approaches__tittle{
+        font-size: 21px;
+    }
+
+    .oto__approaches__p{
+        font-size: 15px;
+        padding: 0 3px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .oto__card{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 70vh;
+    }
+
+    .oto__doctor__name{
+        text-align: center;
+    }
+
+    .oto__text{
+        margin-bottom: 10px;
+    }
+
+    .oto__img{
+        width: 360px;
+        margin-right: 0;
+    }
+
+    .oto__icon{
+        height: 50px;
+    }
+
+    .oto__span{
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+    .oto__icon__p{
+        font-size: 15px;
+    }
+
+    .oto__section3{
+        height: 75vh;
+    }
+
+    .oto__approaches{
+        height: 75vh;
+        grid-template-rows: repeat(3,25vh);
+    }
+
+    .oto__approaches__tittle{
+        font-size: 19px;
+    }
+
+    .oto__approaches__p{
+        font-size: 13px;
+        padding: 0 3px;
+    }
+
+    .oto__contact__container{
+        width: 50vw;
+    }
+
+    .oto__contact__h2{
+        font-size: 36px;
+      }
+  
+    .oto__contact__icon{
+      font-size: 27px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .oto__section1{
+        margin-top: 100px;
+        height: 650px;
+    }
+
+    .oto__card{
+        height: 600px;
+    }
+
+    .oto__text{
+        margin: 0;
+    }
+
+    .oto__section2{
+      height: 1500px;
+      margin-top: 70px;
+      flex-direction: column;
+    }
+
+    .oto__icon__box{
+        height: 1200px;
+    }
+
+    .oto__item{
+        height: 13%;
+        width: 90vw;
+        margin-bottom: 0;
+    }
+
+    .oto__span{
+        margin-top: 5px;
+    }
+
+    .oto__section3{
+        height: 270vh;
+        min-width: 100vw;
+        display: flex;
+    }
+    
+    .oto__approaches{
+        height: 270vh;
+        display: grid;    
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6,45vh);
+    }
+
+    .oto__approaches__tittle{
+        font-size: 20px;
+    }
+
+    .oto__approaches__item:nth-child(3),
+    .oto__approaches__item:nth-child(6),
+    .oto__approaches__item:nth-child(9){
+      display: none;
+    }
+
+    .oto__approaches__p{
+        font-size: 16px;
+    }
+
+    .oto__contact__container{
+        width: 65vw;
+    }
+
+    .oto__contact__h2{
+        font-size: 30px;
+      }
+  
+    .oto__contact__icon{
+      font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width: 410px) {
+
+    .oto__section1{
+        margin-top: 140px;
+    }
+
+    .oto__img{
+        height: 300px;
+        width: 300px;
+    }
+ 
+    .oto__item{
+        height: 15%;
+    }
+
+    .oto__section2{
+        height: 1800px;
+        margin-top: 70px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .oto__approaches__p{
+        padding: 0 5px;
+    }
+
+
+      .oto__icon__box{
+          height: 1700px;
+      }
+
+      .oto__contact__container{
+        width: 80vw;
+    }
 }

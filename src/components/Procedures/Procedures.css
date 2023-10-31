@@ -29,7 +29,6 @@
     align-items: center;
     justify-content: space-evenly;
     margin: 10px;
-    /*background-color: #00CAD1;*/
     background-color: #000;
     color: #fafafa;
     border: 2px solid #00CAD1;
@@ -45,6 +44,13 @@
     border-radius: 15px;
 }
 
+.card__img--bata{
+    height: 150px;
+    width: 150px;
+    border-radius: 15px;
+}
+
+
 .speciality__tittle{
     font-size: 25px;
 }
@@ -55,5 +61,199 @@
 
 .card__p{
     text-align: center;
-    margin: 0 25px;
+    margin: 0 5px;
 }
+
+@media screen and (max-width: 1700px) {
+
+    .procedures{
+        height: calc(100vh - 110px);
+        margin-top: 40px;
+    }
+
+    .cards__container{
+        width: 100vw;
+        height: 80vh;
+    }
+
+    .card{
+        height:37vh;
+        width: 550px;
+    }
+
+    .card__img{
+        height: 130px;
+        width: 130px;
+    }
+
+    .card__img--bata{
+        height: 120px;
+        width: 120px;
+    }
+
+    .speciality__tittle{
+        font-size: 24px;
+    }
+
+    .doctor__name{
+        font-size: 19px;
+    }
+
+    .card__p{
+        font-size: 15px;
+    }
+
+}
+
+
+@media screen and (max-width: 1200px) {
+
+
+    .procedures__tittle{
+        font-size: 30px;
+        margin: 0;
+    }
+
+    .card{
+        width: 420px;
+    }
+
+    .speciality__tittle{
+        font-size: 22px;
+    }
+
+    .doctor__name{
+        font-size: 17px;
+    }
+
+    .card__p{
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .procedures__tittle{
+        font-size: 28px;
+    }
+
+    .card{
+        width: 300px;
+    }
+
+    .speciality__tittle{
+        font-size: 21px;
+    }
+
+    .doctor__name{
+        font-size: 16px;
+    }
+    
+    .card__img--bata{
+        height: 100px;
+        width: 100px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .procedures{
+        margin-top: 50px;
+        height: calc(100vh - 70px);
+    }
+
+    .cards__container{
+        width: 100vw;
+        height: 90%;
+    }
+
+    .card{
+        width: 230px;
+    }
+
+    .card__img{
+        height: 110px;
+        width: 110px;
+    }
+
+    .card__img--bata{
+        height: 100px;
+        width: 100px;
+    }
+
+    .speciality__tittle{
+        font-size: 20px;
+    }
+
+    .doctor__name{
+        font-size: 15px;
+    }
+
+    .card__p{
+        font-size: 12px;
+    }
+    
+
+}
+
+@media screen and (max-width: 502px) {
+
+    .cards__container{
+        width: 100vw;
+        height: 80%;
+    }
+
+    .card{
+        width: 180px;
+        height: 36vh;
+        margin: 5px;
+    }
+
+    .card__img{
+        height: 100px;
+        width: 100px;
+    }
+
+    .card__img--bata{
+        height: 90px;
+        width: 90px;
+    }
+
+    .speciality__tittle{
+        font-size: 18px;
+    }
+
+    .doctor__name{
+        font-size: 13px;
+    }
+
+    .card__p{
+        font-size: 11px;
+    }
+
+}
+
+@media screen and (max-width: 390px){
+
+    .procedures{
+        height: calc(200vh - 70px);
+    }
+
+    .card{
+        width: 300px;
+        height:42vh;
+    }
+
+    .cards__container{
+        height: 180vh;
+    }
+
+    .card__img{
+        height: 130px;
+        width: 130px;
+    }
+
+}
+

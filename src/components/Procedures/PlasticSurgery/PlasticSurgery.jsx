@@ -1,83 +1,145 @@
 import './PlasticSurgery.css';
-import hans from '/dr hans.jpeg';
-import sport from '/sport.jpg';
-import spine from '/spine.jpg'
-import spineicon from '/spine.png'
-import {GiSkeletalHand} from 'react-icons/gi';
-import {GiKneeCap} from 'react-icons/gi';
+import bata from '/bata.avif';
+import face1 from '/face1.avif';
+import face2 from '/face2.avif';
+import body1 from '/body1.avif';
+import body2 from '/body2.avif';
+import beauty1 from '/beauty1.avif';
+import beauty2 from '/beauty2.avif';
+import {motion} from 'framer-motion';
+import {IoLogoWhatsapp, IoIosMail} from 'react-icons/io'
+import {AiFillInstagram} from 'react-icons/ai'
+import {NavLink} from 'react-router-dom';
 
 function PlasticSurgery() {
+  const introductionAnimation={
+    start: {opacity:0, x:100},
+    end: {
+      opacity:1, x:0,
+      transition:{staggerChildren:0.2}
+    }
+  }
+
   return (
     <div className='plastic'>
-      <div className='plastic__section1'>
-        <div className='doctor__card'>
-          <img className='doctor__img' src={hans}/>
-          <h2 className='doctor__procedure'>Traumatology</h2>
-          <h2 className='doctor'>Dr. Hans Ruiz</h2>
-          <p className='doctor__description'>
-            Our surgerys changes lives.<br/>
-            I specialize in pain management of all kinds to give 
-            people a better quality of life and thus improve their days.<br/>
-            From surgical procedures to relieve spinal pain to prosthetic 
-            hip and knee replacement.<br/>
-            I also perform non-surgical procedures for pain relief such as 
-            the application of PRP, hyaluronic acid and radiofrequency pain 
-            reduction to nerves.<br/>
-            I have 9 years of experience in the field of orthopedics and have 
-            performed thousands of surgeries with a very low percentage of 
-            complications.<br/>
-            "You can always get better, you just have to find the right doctor."
-          </p>
-        </div>
-      </div>
+      <motion.div className='plastic__section1'
+        variants={introductionAnimation}
+        initial='start'
+        animate='end'
+      >
+        <motion.div className='plastic__card'
+          variants={introductionAnimation}
+        >
+          <motion.img className='plastic__img' src={bata}
+            variants={introductionAnimation}
+          />
+            <div className='plastic__text'>
+              <motion.h2 className='plastic__procedure'
+
+              variants={introductionAnimation}>
+                Plastic Surgery
+              </motion.h2>
+              <motion.h2 className='plastic__doctor__name'
+
+              variants={introductionAnimation}>
+                Dr.
+              </motion.h2>
+              <motion.p className='plastic__description'
+                variants={introductionAnimation}
+              >
+                The search for beauty and self-confidence is an aspiration 
+                shared by many people. As a plastic surgeon, my goal is to 
+                help patients achieve that desired look safely and naturally.<br/>
+                In my extensive career, I have dedicated myself to providing 
+                quality treatments and procedures that improve the aesthetics 
+                and self-esteem of my patients.<br/>
+                From facial procedures that rejuvenate and beautify to body 
+                surgery that sculpts and enhances the figure, my approach is 
+                to customize each treatment to meet my patients' individual 
+                needs and desires. 
+                I firmly believe that plastic surgery should be an experience 
+                where patients feel heard and understood every step of the 
+                process.
+              </motion.p>
+            </div>
+        </motion.div>
+      </motion.div>
       <div className='plastic__section2'>
-        <div className='sport__medicine'>
-          <div className='sport__img__container'>
-            <img className='sport__img' src={sport}/>
+        <div className='plastic__approaches'>
+          <div className='plastic__approaches__item'>
+            <img className='plastic__approaches__img' src={face1}/>
           </div>
-          <div className='text__container'>
-          <h2 className='sport__tittle'>Sport Medicine</h2>
-          <p className='sport__description'>
-            Prevention and treatment of injuries derived from sports practice.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores id cupiditate minus corrupti beatae nihil autem molestias odit quos voluptates.
-          </p>  
-          </div>
-        </div>
-        <div className='spine__dorsal'>
-          <div className='spine__text__container'>
-            <h2 className='spine__tittle'>Spine Dorsal</h2>
-            <p className='spine__description'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, repellat quas laudantium reiciendis asperiores quaerat illo sint omnis vero magni vel veritatis fuga iure enim incidunt ipsa iste provident. Autem?
+          <div className='plastic__approaches__item'>
+            <h2 className='plastic__approaches__tittle'>Face</h2>
+            <p className='plastic__approaches__p'>
+              Rhinoplasty, Blepharoplasty, Facelift, Facial Liposuction,
+              Otoplasty
             </p>  
           </div>
-          <div className='spine__img__container'>
-            <img className='spine__img' src={spine}/>
+          <div className='plastic__approaches__item'>
+            <img className='plastic__approaches__img' src={face2}/>
+          </div>
+          <div className='plastic__approaches__item'>
+            <img className='plastic__approaches__img' src={body1}/>
+          </div>
+          <div className='plastic__approaches__item'>
+            <h2 className='plastic__approaches__tittle'>Body Procedures</h2>
+            <p className='plastic__approaches__p'>
+              Liposuction, Abdominoplasty, Breast augmentation,
+              Breast reduction, Breast lift, Body contouring surgery 
+              after weight loss
+            </p>   
+          </div>
+          <div className='plastic__approaches__item'>
+            <img className='plastic__approaches__img' src={body2}/>
+          </div>
+          <div className='plastic__approaches__item'>
+            <img className='plastic__approaches__img' src={beauty1}/>
+          </div>
+          <div className='plastic__approaches__item'>
+          <h2 className='plastic__approaches__tittle'>
+            Non-Surgical Rejuvenation Procedures
+          </h2>
+            <p className='plastic__approaches__p'>
+            Dermal fillers (such as hyaluronic acid), Laser facial rejuvenation treatments,
+            Chemical peels
+            </p>  
+          </div>
+          <div className='plastic__approaches__item'>
+            <img className='plastic__approaches__img' src={beauty2}/>
           </div>
         </div>
       </div>
-      <div className='plastic__section3'>
-        <div className='icon__box'>
-          <div className='trauma__item'>
-            <GiSkeletalHand className='trauma__icon'/>
-            <span className='trauma__span'>Wrist Surgery</span>
-            <p className='icon__p'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint explicabo deleniti neque ipsum voluptate? Quaerat.
-            </p>
-          </div>
-          <div className='trauma__item'>
-            <GiKneeCap className='trauma__icon'/>
-            <span className='trauma__span'>Knee Surgery</span>
-            <p className='icon__p'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint explicabo deleniti neque ipsum voluptate? Quaerat.
-            </p>
-          </div>
-          <div className='trauma__item'>
-            <img className='trauma__icon--png' src={spineicon}/>
-            <span className='trauma__span'>Herniatic Disc</span>
-            <p className='icon__p'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint explicabo deleniti neque ipsum voluptate? Quaerat.
-            </p>
-          </div>
+      <div className='plastic__contact'>
+        <h2 className='plastic__contact__h2'>Contact Us</h2>
+        <div className='plastic__contact__container'>
+            <a className='plastic__contact__item'
+              href='mailto:travelmedicalmx@gmail.com'
+              target='_blank'
+            >
+              <IoIosMail className='plastic__contact__icon'/>
+              <span className='plastic__contact__span'>
+                E-Mail
+              </span>
+            </a>
+            <a className='plastic__contact__item'
+              href='https://wa.me/526981032939'
+              target='_blank'
+            >
+              <IoLogoWhatsapp className='plastic__contact__icon'/>
+              <span className='plastic__contact__span'>
+                WhatsApp
+              </span>
+            </a>
+            <a className='plastic__contact__item'
+              href='https://www.instagram.com/medical.travel.mx/'
+              target='_blank'
+            >
+              <AiFillInstagram className='plastic__contact__icon'/>
+              <span className='plastic__contact__span'>
+                Instagram
+              </span>
+            </a>
         </div>
       </div>
     </div>
