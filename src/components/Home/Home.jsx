@@ -5,8 +5,8 @@ import oto from "/oto icon.png";
 import plastic from "/plastic icon.png";
 import trauma from "/trauma icon.png";
 import airplane from "/airplane.png";
-import travel7 from "/travel7.avif";
-import travel8 from "/travel8.avif";
+import travel1 from "/section4(1).jpg";
+import travel2 from "/section4(2).jpg";
 import hotel from "/hotel.avif";
 import bonus from "/bonus.avif";
 import { motion, useInView } from "framer-motion";
@@ -36,6 +36,17 @@ function Home() {
       rotateY: [0, 360, 0],
       transition: {
         staggerChildren: 0.4,
+        duration: 0.6,
+      },
+    },
+  };
+  const travelAnimations = {
+    start: { y: 100, opacity: 0 },
+    end: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
         duration: 0.6,
       },
     },
@@ -170,17 +181,17 @@ function Home() {
           </motion.div>
         </motion.div>
       </section>
-      <section className="bonus__home">
+      <section className="home__section3">
         <motion.div
-          className="bonus__container"
+          className="home__section3__container"
           initial={{ opacity: 0, y: -100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}
           viewport={{ once: true, amount: 0.9 }}
         >
-          <h2 className="bonus__h2">Why Come Abroad?</h2>
+          <h2 className="section3__h2">Why Come Abroad?</h2>
           <br />
-          <p className="bonus__p">
+          <p className="section3__p">
             -High Health Care Costs in Developed Countries
             <br />
             -Ease and Accessibility of International Travel
@@ -200,10 +211,10 @@ function Home() {
             an affordable alternative.
           </p>
         </motion.div>
-        <hr className="bonus__hr" />
-        <img className="bonus__img" src={bonus} />
+        <hr className="section3__hr" />
+        <img className="section3__img" src={bonus} />
       </section>
-      <section className="home__section3" ref={ref}>
+      <section className="home__section4" ref={ref}>
         <motion.img
           className="airplane"
           animate={{ x: isInView ? 0 : -2000 }}
@@ -212,33 +223,57 @@ function Home() {
           src={airplane}
           alt="travel airplane"
         />
-        <div className="banner">
-          <img className="travelimg1" src={travel7} alt="" />
-          <p className="travel__p">
-            <b>
-              Travel to the most iconic places on Tj, SD, enjoy a comfortable
-              place and then come to us for help to you with your health{" "}
-            </b>
-          </p>
-          <img className="travelimg2" src={travel8} alt="" />
-        </div>
+        <motion.div
+          className="home__section4__container"
+          variants={travelAnimations}
+          initial="start"
+          whileInView="end"
+          viewport={{ once: true, amount: 0.5 }}
+        >
+          <motion.div
+            className="home__section4__items"
+            variants={travelAnimations}
+          >
+            <img className="home__section4__img" src={travel1} />
+          </motion.div>
+          <motion.div
+            className="home__section4__items"
+            variants={travelAnimations}
+          >
+            <div className="home__section4__text">
+              <p className="home__section4__p">
+                <b>
+                  Travel to the most iconic places on Tj, SD, enjoy a
+                  comfortable place and then come to us for help to you with
+                  your health
+                </b>
+              </p>
+            </div>
+          </motion.div>
+          <motion.div
+            className="home__section4__items"
+            variants={travelAnimations}
+          >
+            <img className="home__section4__img" src={travel2} />
+          </motion.div>
+        </motion.div>
       </section>
-      <section className="home__section4">
+      <section className="home__section5">
         <div
-          className="section4__background"
+          className="section5__background"
           style={{
             background: `url(${hotel}) no-repeat center/var(--section4-background-size)`,
           }}
         >
           <motion.div
-            className="section4__container"
+            className="section5__container"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.3, delay: 0.4 }}
             viewport={{ once: true, amount: 1 }}
           >
-            <h2 className="section4__h2">How is traveling with us?</h2>
-            <p className="section4__p">
+            <h2 className="section5__h2">How is traveling with us?</h2>
+            <p className="section5__p">
               The packages are completely personalized, regardless of whether
               you only want to temporarily lodging to solve your health, or if
               you decide to get a tour to any of our destinations.

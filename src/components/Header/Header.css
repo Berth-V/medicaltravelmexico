@@ -1,18 +1,26 @@
 :root{
-  --toggle-btn-dis: none;
+  --toggle-btn-display: none;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+  width: 100vw;
+  position: fixed;
+  background-color: #262626;
+  z-index: 100;
 }
 
 .nav{
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 65px;
+  height: 100%;
   display: flex;
   justify-content:space-between;
   align-items: center;
-  z-index: 100;
-  background-color: #262626;
 }
 
 .logo{
@@ -27,15 +35,22 @@
 .nav__ul{
   display: flex;
   justify-content: space-around;
-  width: 500px;
-  height: 100%;
+  width: 450px;
+  height: 65px;
   list-style: none;
   margin-right: 2vw;
 }
 
 .nav__li{
-  height: auto;
+  height: 65px;
   width: auto;
+  transition-duration: 0.3s;
+}
+
+.nav__li:nth-child(2){
+  width: 150px;
+  position: relative;
+  z-index: 100;
 }
 
 .nav__link{
@@ -62,6 +77,18 @@
 .nav__span{
   font-size: 18px;
   color: #fcfcfc;
+  transition-duration: 0.3s;
+}
+
+.nav__span:hover{
+  color: #44D9EE;
+}
+
+.procedures__extension{
+  position: absolute;
+  z-index: 1;
+  height: auto;
+  background-color: #262626;
 }
 
 @media screen and (max-width: 1500px){
@@ -78,7 +105,7 @@
 
 @media screen and (max-width: 1200px){
 
-  .nav{
+  .header{
     height: 40px;
   }
 
@@ -88,6 +115,11 @@
 
   .nav__ul{
     width: 400px;
+    height: 40px;
+  }
+
+  .nav__li{
+    height: 40px;
   }
 
   .nav__span{
@@ -99,7 +131,7 @@
 @media screen and (max-width: 800px) {
 
   :root{
-    --toggle-btn-dis: flex;
+    --toggle-btn-display: flex;
   }
 
   .nav{
@@ -113,7 +145,7 @@
   .toggle__btn{
     display: initial;
     position: absolute;
-    left: 5px;
+    left: 10px;
     top: 7px;
     font-size: 25px;
     color: #44D9EE;

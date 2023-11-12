@@ -7,6 +7,7 @@ import { FaBars } from "react-icons/fa";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isProcedureHover, setIsProcedureHover] = useState(false);
   const handleClick = () => {
     setIsOpen(!isOpen);
   };
@@ -14,70 +15,88 @@ function Header() {
     setIsOpen(false);
   };
   // Framer Motion Variants //
-  const hoverVariants = {
-    hover: {
-      scale: 1.05,
-    },
+  const dropDownNavVariants = {
+    show: { top: "65px", transition: { duration: 0.2 } },
+    hide: { top: "-260px", transition: { duration: 0.2 } },
   };
   const toggleAnimation = {
-    open: { left: "0", display: "var(--toggle-btn-dis)" },
-    closed: { left: "-100vw", display: "var(--toggle-btn-dis)" },
+    open: { left: "0", display: "var(--toggle-btn-display)" },
+    closed: { left: "-100vw", display: "var(--toggle-btn-display)" },
   };
 
   return (
     <>
-      <nav className="nav">
-        <img className="logo" src={logo} />
-        <motion.div onClick={handleClick}>
-          <FaBars className="toggle__btn" />
-        </motion.div>
-        <ul className="nav__ul">
-          <motion.li
-            className="nav__li"
-            variants={hoverVariants}
-            whileHover={"hover"}
-          >
-            <NavLink className="nav__link" to="/">
-              <span className="nav__span">
-                <b>Home</b>
-              </span>
-            </NavLink>
-          </motion.li>
-          <motion.li
-            className="nav__li"
-            variants={hoverVariants}
-            whileHover={"hover"}
-          >
-            <NavLink className="nav__link" to="/procedures">
-              <span className="nav__span">
-                <b>Procedures</b>
-              </span>
-            </NavLink>
-          </motion.li>
-          <motion.li
-            className="nav__li"
-            variants={hoverVariants}
-            whileHover={"hover"}
-          >
-            <NavLink className="nav__link" to="/destinations">
-              <span className="nav__span">
-                <b>Destinations</b>
-              </span>
-            </NavLink>
-          </motion.li>
-          <motion.li
-            className="nav__li"
-            variants={hoverVariants}
-            whileHover={"hover"}
-          >
-            <NavLink className="nav__link" to="/about">
-              <span className="nav__span">
-                <b>About</b>
-              </span>
-            </NavLink>
-          </motion.li>
-        </ul>
-      </nav>
+      <header className="header">
+        <nav className="nav">
+          <img className="logo" src={logo} />
+          <motion.div onClick={handleClick}>
+            <FaBars className="toggle__btn" />
+          </motion.div>
+          {/* ul For Desktop Mode */}
+          <ul className="nav__ul">
+            <li className="nav__li">
+              <NavLink className="nav__link" to="/">
+                <span className="nav__span">
+                  <b>Home</b>
+                </span>
+              </NavLink>
+            </li>
+            <li
+              className="nav__li"
+              onMouseEnter={() => setIsProcedureHover(true)}
+              onMouseLeave={() => setIsProcedureHover(false)}
+            >
+              <NavLink className="nav__link" to="/procedures">
+                <span className="nav__span">
+                  <b>Procedures</b>
+                </span>
+              </NavLink>
+              {/* Dropdown Nav */}
+              <motion.div
+                className="procedures__extension"
+                variants={dropDownNavVariants}
+                animate={isProcedureHover ? "show" : "hide"}
+              >
+                <li className="nav__li">
+                  <NavLink className="nav__link" to="/bariatric">
+                    <span className="nav__span">Bariatric</span>
+                  </NavLink>
+                </li>
+                <li className="nav__li">
+                  <NavLink className="nav__link" to="/otolaryngologist">
+                    <span className="nav__span">Otolaryngologist</span>
+                  </NavLink>
+                </li>
+                <li className="nav__li">
+                  <NavLink className="nav__link" to="/plasticSurgery">
+                    <span className="nav__span">Plastic Surgery</span>
+                  </NavLink>
+                </li>
+                <li className="nav__li">
+                  <NavLink className="nav__link" to="/traumatology">
+                    <span className="nav__span">Traumatology</span>
+                  </NavLink>
+                </li>
+              </motion.div>
+            </li>
+            <li className="nav__li">
+              <NavLink className="nav__link" to="/destinations">
+                <span className="nav__span">
+                  <b>Destinations</b>
+                </span>
+              </NavLink>
+            </li>
+            <li className="nav__li">
+              <NavLink className="nav__link" to="/about">
+                <span className="nav__span">
+                  <b>About</b>
+                </span>
+              </NavLink>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      {/* ul For Mobile Mode */}
       <motion.div
         className="nav__ul2"
         variants={toggleAnimation}
