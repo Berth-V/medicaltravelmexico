@@ -1,6 +1,5 @@
-import React from "react";
-import { useContext } from "react";
-import { Context } from "../Context/Context";
+import {useContext} from 'react';
+import {Context} from '../Context/Context';
 
 function TravelInfo() {
   const {
@@ -18,24 +17,24 @@ function TravelInfo() {
   return (
     <>
       <div
-        className="ensenada__info"
-        style={{ display: isEnsenada ? "flex" : "none" }}
+        className='ensenada__info'
+        style={{display: isEnsenada ? 'flex' : 'none'}}
       >
-        <div className="ensenada__info__container">
+        <div className='ensenada__info__container'>
           <span
-            className="ensenada__close__btn"
+            className='ensenada__close__btn'
             onClick={() => setIsEnsenada(!isEnsenada)}
           >
             X
           </span>
-          <h2 className="ensenada__info__h2">Ensenada</h2>
+          <h2 className='ensenada__info__h2'>Ensenada</h2>
           <br />
-          <p className="ensenada__info__p">
-            "It is the capital of Mexican wine." Surrounded by the Pacific Ocean
-            and the Sea of Cortez, the municipality of Ensenada is the largest
-            in Mexico. Its vast physiography, flora and fauna, both terrestrial
-            and marine, make Ensenada an attractive destination for lovers of
-            nature and outdoor activities. It has two National Parks:
+          <p className='ensenada__info__p'>
+            &quot;It is the capital of Mexican wine.&quot; Surrounded by the
+            Pacific Ocean and the Sea of Cortez, the municipality of Ensenada is
+            the largest in Mexico. Its vast physiography, flora and fauna, both
+            terrestrial and marine, make Ensenada an attractive destination for
+            lovers of nature and outdoor activities. It has two National Parks:
             Constitución de 1857 and Sierra de San Pedro Mártir. In the latter
             is located the National Astronomical Observatory and the “Picacho
             del Diablo”, the highest mountain on the peninsula. It also has
@@ -92,29 +91,29 @@ function TravelInfo() {
         </div>
       </div>
       <div
-        className="rosarito__info"
-        style={{ display: isRosarito ? "flex" : "none" }}
+        className='rosarito__info'
+        style={{display: isRosarito ? 'flex' : 'none'}}
       >
-        <div className="rosarito__info__container">
+        <div className='rosarito__info__container'>
           <span
-            className="rosarito__close__btn"
+            className='rosarito__close__btn'
             onClick={() => setIsRosarito(!isRosarito)}
           >
             X
           </span>
-          <h2 className="rosarito__info__h2">Rosarito</h2>
+          <h2 className='rosarito__info__h2'>Rosarito</h2>
           <br />
-          <p className="rosarito__info__p">
-            "The sun and beach destination by tradition." The ideal destination
-            for water activities such as surfing and diving. Here you will find
-            some of the best waves in the region and the only artificial reef in
-            the state, in addition to the Metropolitan Convention Center, and
-            the Baja Studios, where some of the most famous films in the history
-            of cinema have been filmed, such as “Titanic.” or “Planet of the
-            Apes” and internationally known series such as “Fear The Walking
-            Dead”. Home of traditional Puerto Nuevo style lobster, served with
-            beans, rice and flour tortillas. Thousands of surfers gather on its
-            beaches annually.
+          <p className='rosarito__info__p'>
+            &quot;The sun and beach destination by tradition.&quot; The ideal
+            destination for water activities such as surfing and diving. Here
+            you will find some of the best waves in the region and the only
+            artificial reef in the state, in addition to the Metropolitan
+            Convention Center, and the Baja Studios, where some of the most
+            famous films in the history of cinema have been filmed, such as
+            “Titanic.” or “Planet of the Apes” and internationally known series
+            such as “Fear The Walking Dead”. Home of traditional Puerto Nuevo
+            style lobster, served with beans, rice and flour tortillas.
+            Thousands of surfers gather on its beaches annually.
             <br />
             It has 22 hotels with more than 1,600 rooms available to serve
             tourists.
@@ -148,26 +147,26 @@ function TravelInfo() {
         </div>
       </div>
       <div
-        className="sandiego__info"
-        style={{ display: isSandiego ? "flex" : "none" }}
+        className='sandiego__info'
+        style={{display: isSandiego ? 'flex' : 'none'}}
       >
-        <div className="sandiego__info__container">
+        <div className='sandiego__info__container'>
           <span
-            className="sandiego__close__btn"
+            className='sandiego__close__btn'
             onClick={() => setIsSandiego(!isSandiego)}
           >
             X
           </span>
-          <h2 className="sandiego__info__h2">San Diego</h2>
+          <h2 className='sandiego__info__h2'>San Diego</h2>
           <br />
-          <p className="sandiego__info__p">
-            In case all that sun isn't enough, San Diego is a coastal city with
-            world-class restaurants, beautiful ocean views, neighborhoods
+          <p className='sandiego__info__p'>
+            In case all that sun isn&apos;t enough, San Diego is a coastal city
+            with world-class restaurants, beautiful ocean views, neighborhoods
             steeped in history and culture, and a centrally located urban park.
-            . Whether you're spending a few days enjoying the many beaches and
-            surf breaks, visiting the water attractions SeaWorld San Diego and
-            Mission Bay Aquatic Park, or exploring what the city has to offer
-            inland, San Diego won't disappoint.
+            . Whether you&apos;re spending a few days enjoying the many beaches
+            and surf breaks, visiting the water attractions SeaWorld San Diego
+            and Mission Bay Aquatic Park, or exploring what the city has to
+            offer inland, San Diego won&apos;t disappoint.
             <br />
             <br />
             Perhaps the best place to start is Balboa Park, 485 hectares of
@@ -179,10 +178,10 @@ function TravelInfo() {
             a lily pond, and venture to the Timken Museum, which is located next
             door and is free to enter. Enjoy a leisurely sushi lunch at the
             Japanese Friendship Garden before strolling to the Spreckels Organ
-            Pavilion (on Sunday afternoons, you can hear the organ's 5,017 pipes
-            come to life). You can also visit one of the various exceptional
-            museums, such as the Fleet Science Center or the Museum of Us
-            (formerly known as the Museum of Man).
+            Pavilion (on Sunday afternoons, you can hear the organ&apos;s 5,017
+            pipes come to life). You can also visit one of the various
+            exceptional museums, such as the Fleet Science Center or the Museum
+            of Us (formerly known as the Museum of Man).
             <br />
             <br />
             Explore must-see shops and locations in key neighborhoods, including
@@ -195,40 +194,41 @@ function TravelInfo() {
             (sometimes thrown together, as in the famous fish tacos) often take
             center stage. From food carts to extremely casual restaurants to
             top-notch eateries that will be on your bucket list, the city offers
-            dozens of delicious options. When you're craving fresh seafood
-            served dockside, head to Coasterra, Mitch's Seafood, or Royal
+            dozens of delicious options. When you&apos;re craving fresh seafood
+            served dockside, head to Coasterra, Mitch&apos;s Seafood, or Royal
             Rooster. For the best views of La Jolla surfing, along with
             top-notch California food, reserve a table on the terrace at
-            George&apos;s on the Cove. If you can't stop eating tacos, you can't
-            go wrong in this city; But if you want to try elevated and creative
-            options, head to Sitio (multiple branches) or Lola 55 (downtown).
-            (You can explore more about the taco's origins on the Southern
-            California Taco Tour.)
+            George&apos;s on the Cove. If you can&apos;t stop eating tacos, you
+            can&apos;t go wrong in this city; But if you want to try elevated
+            and creative options, head to Sitio (multiple branches) or Lola 55
+            (downtown). (You can explore more about the taco&apos;s origins on
+            the Southern California Taco Tour.)
             <br />
             Of course, not every culinary experience San Diego offers is a
             restaurant. For an overview, head to the annual Latin Food Fest and
             foodie extravaganza that is Liberty Public Market, a former naval
-            complex now home to 30 premium food and drink vendors. And don't
-            forget to visit nearby La Jolla, the Maritime Museum, San Diego
-            County's many famous craft breweries, and Torrey Pines Gliderport.
+            complex now home to 30 premium food and drink vendors. And
+            don&apos;t forget to visit nearby La Jolla, the Maritime Museum, San
+            Diego County&apos;s many famous craft breweries, and Torrey Pines
+            Gliderport.
             <br />
           </p>
         </div>
       </div>
       <div
-        className="tijuana__info"
-        style={{ display: isTijuana ? "flex" : "none" }}
+        className='tijuana__info'
+        style={{display: isTijuana ? 'flex' : 'none'}}
       >
-        <div className="tijuana__info__container">
+        <div className='tijuana__info__container'>
           <span
-            className="tijuana__close__btn"
+            className='tijuana__close__btn'
             onClick={() => setIsTijuana(!isTijuana)}
           >
             X
           </span>
-          <h2 className="tijuana__info__h2">Tijuana</h2>
+          <h2 className='tijuana__info__h2'>Tijuana</h2>
           <br />
-          <p className="tijuana__info__p">
+          <p className='tijuana__info__p'>
             Tijuana is a young, innovative and irreverent city. It is the most
             visited border in the world, its gastronomic, cultural and artistic
             boom has positioned it as one of the best cities to visit with
@@ -287,15 +287,15 @@ function TravelInfo() {
           </p>
         </div>
       </div>
-      <div className="la__info" style={{ display: isLa ? "flex" : "none" }}>
-        <div className="la__info__container">
-          <span className="la__close__btn" onClick={() => setIsLa(!isLa)}>
+      <div className='la__info' style={{display: isLa ? 'flex' : 'none'}}>
+        <div className='la__info__container'>
+          <span className='la__close__btn' onClick={() => setIsLa(!isLa)}>
             X
           </span>
-          <h2 className="la__info__h2">Los Angeles</h2>
+          <h2 className='la__info__h2'>Los Angeles</h2>
           <br />
-          <div className="la__info__text">
-            <p className="la__info__p">
+          <div className='la__info__text'>
+            <p className='la__info__p'>
               Los Angeles is a city that shows you many distinctive faces and
               neighborhoods, and each one offers something exciting. The city
               has so much to offer that you will need plenty of time to explore
@@ -304,18 +304,18 @@ function TravelInfo() {
               <br />
               Popular culture in Los Angeles.
               <br />
-              Start with Hollywood's historic attractions, such as the Walk of
-              Fame and the TCL Chinese Theatre, before strolling along the
+              Start with Hollywood&apos;s historic attractions, such as the Walk
+              of Fame and the TCL Chinese Theatre, before strolling along the
               stretch of Sunset Boulevard known as The Strip, with its vibrant
               billboards, restaurants, and restaurants. and famous nightclubs.
               <br />
               <br />
               Music lovers will feel at home at the L.A. complex. Live, located
               downtown, home to the Grammy Museum, which features exhibits and
-              memorabilia that trace Los Angeles' important role in popular
-              music. Families won't want to miss Universal Studios Hollywood and
-              its exciting theme parks, movie attractions like The Wizarding
-              World of Harry Potter™, and the famous Studio Tour.
+              memorabilia that trace Los Angeles&apos; important role in popular
+              music. Families won&apos;t want to miss Universal Studios
+              Hollywood and its exciting theme parks, movie attractions like The
+              Wizarding World of Harry Potter™, and the famous Studio Tour.
               <br />
               <br />
               Coastal cities.
@@ -326,7 +326,7 @@ function TravelInfo() {
               <br />
               Santa Monica has an area of 5.6 kilometers of sand and is famous
               worldwide for its pier. The pier with its amusement park, arcade
-              and aquarium is a short walk from Santa Monica's Third Street
+              and aquarium is a short walk from Santa Monica&apos;s Third Street
               Promenade, an open-air shopping center that offers shopping
               options in a festive setting.
               <br />
@@ -341,7 +341,7 @@ function TravelInfo() {
               <br />
               Synonymous with high fashion shopping and world-class dining, in
               Beverly Hills you can visit and window shop one-name stores such
-              as Chanel, Dior, Gucci, Lanvin, Tiffany's and Valentino.
+              as Chanel, Dior, Gucci, Lanvin, Tiffany&apos;s and Valentino.
               <br />
               <br />
               This is also a place for people-watching: grab a latte outside the
@@ -350,23 +350,23 @@ function TravelInfo() {
               celebrities who reside here like ordinary people.
               <br />
             </p>
-            <p className="la__info__p2">
+            <p className='la__info__p2'>
               Cultural institutions:
               <br />
               <br />
               Another wonderful place for stargazing and panoramic views of the
               city is the Griffith Observatory, which sits on a hill in Griffith
-              Park, northwest of the city center. This is just one of the city's
-              many must-see stops for culture fans.
+              Park, northwest of the city center. This is just one of the
+              city&apos;s many must-see stops for culture fans.
               <br />
-              There's also the Getty Center, with its striking architecture and
-              welcoming museums filled with popular permanent and temporary art
-              exhibits. The Los Angeles County Museum of Art features more than
-              120,000 works representing ancient and modern culture. Nearby, you
-              can complement your museum visit at the Craft & Folk Art Museum,
-              the Page Museum (home to the La Brea Tar Pits), the Architecture &
-              Design Museum (Museum of Design and Architecture) and the Petersen
-              Automotive Museum (Petersen Automobile Museum).
+              There&apos;s also the Getty Center, with its striking architecture
+              and welcoming museums filled with popular permanent and temporary
+              art exhibits. The Los Angeles County Museum of Art features more
+              than 120,000 works representing ancient and modern culture.
+              Nearby, you can complement your museum visit at the Craft & Folk
+              Art Museum, the Page Museum (home to the La Brea Tar Pits), the
+              Architecture & Design Museum (Museum of Design and Architecture)
+              and the Petersen Automotive Museum (Petersen Automobile Museum).
               <br />
               <br />
             </p>

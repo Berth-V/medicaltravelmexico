@@ -1,13 +1,13 @@
-.about{
-    display: flex;
-    width: 100vw;
-    height:calc(100vh - 100px) ;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+.about {
+  display: flex;
+  width: 100vw;
+  height: calc(100vh - 100px);
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.about__description{
+.about__description {
   margin-top: 70px;
   width: 50vw;
   height: 37vh;
@@ -18,17 +18,17 @@
   text-align: center;
 }
 
-.about__h1{
+.about__h1 {
   text-align: center;
-  text-decoration: 3px underline #44D9EE;
+  text-decoration: 3px underline #44d9ee;
 }
 
-.about__p{
+.about__p {
   width: 40vw;
   font-size: 19px;
 }
 
-.mission__description{
+.mission__description {
   display: flex;
   justify-content: space-evenly;
   width: 90vw;
@@ -36,254 +36,236 @@
   text-align: center;
 }
 
-.mission__item{
+.mission__item {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   width: 30vw;
   height: 50vh;
-  border: 2px solid #44D9EE;
+  border: 2px solid #44d9ee;
   border-radius: 15px;
 }
 
-.mission__h3{
+.mission__h3 {
   font-size: 25px;
 }
 
-.mission__p{
+.mission__p {
   padding: 0 20px;
   font-size: 17px;
 }
 
-.mission__img{
+.mission__img {
   width: 300px;
   border-radius: 15px;
 }
 
 @media screen and (max-width: 1700px) {
-
-  .about{
+  .about {
     height: calc(100vh - 110px);
     margin-top: 65px;
   }
 
-  .about__description{
+  .about__description {
     width: 50vw;
     height: 40vh;
     margin: 0;
   }
 
-  .about__h1{
+  .about__h1 {
     font-size: 45px;
   }
 
-  .about__p{
+  .about__p {
     width: 95%;
     font-size: 17px;
   }
 
-  .mission__description{
+  .mission__description {
     height: 45vh;
     align-items: center;
   }
 
-  .mission__item{
+  .mission__item {
     height: 100%;
     width: 35vw;
   }
-  
-  .mission__p{
+
+  .mission__p {
     font-size: 15px;
   }
 
-  .mission__img{
+  .mission__img {
     height: 150px;
   }
-
 }
 
 @media screen and (max-width: 1500px) {
-
-  .about__description{
+  .about__description {
     width: 70vw;
   }
 
-  .mission__item{
+  .mission__item {
     width: 40vw;
   }
 
-  .mission__img{
+  .mission__img {
     height: 130px;
     width: 200px;
   }
-
 }
 
 @media screen and (max-width: 1210px) {
-
-  .about__h1{
+  .about__h1 {
     font-size: 39px;
   }
 
-  .about__p{
+  .about__p {
     font-size: 15px;
   }
 
-  .mission__description{
+  .mission__description {
     width: 95vw;
     height: 60vh;
   }
 
-  .mission__item{
+  .mission__item {
     width: 40vw;
   }
-
 }
 
 @media screen and (max-width: 900px) {
-  
-  .about__h1{
+  .about__h1 {
     font-size: 38px;
   }
 
-  .about__p{
+  .about__p {
     font-size: 14px;
   }
 
-  .mission__item{
+  .mission__item {
     width: 45vw;
   }
 
-  .mission__h3{
+  .mission__h3 {
     font-size: 23px;
   }
 
-  .mission__p{
+  .mission__p {
     font-size: 13px;
   }
-
 }
 
 @media screen and (max-width: 700px) {
-
-  .about__description{
+  .about__description {
     width: 95vw;
   }
 
-  .about__h1{
+  .about__h1 {
     font-size: 35px;
   }
 
-  .about__p{
+  .about__p {
     font-size: 14px;
   }
 
-  .mission__h3{
+  .mission__h3 {
     font-size: 22px;
   }
 
-  .mission__p{
+  .mission__p {
     font-size: 12px;
     padding: 0 5px;
   }
-
 }
 
 @media screen and (max-width: 500px) {
-
-  .about{
+  .about {
     height: calc(160vh - 70px);
     margin-top: 10px;
   }
 
-  .about__description{
+  .about__description {
     height: 40vh;
   }
-  
-  .about__h1{
+
+  .about__h1 {
     font-size: 30px;
   }
 
-  .about__p{
+  .about__p {
     font-size: 13px;
   }
 
-  .mission__description{
+  .mission__description {
     height: 95vh;
     flex-direction: column;
   }
 
-  .mission__item{
+  .mission__item {
     height: 45vh;
     width: 85vw;
   }
 
-  .mission__p{
+  .mission__p {
     padding: 0 15px;
   }
 
-
-  .mission__img{
+  .mission__img {
     height: 140px;
     width: 200px;
   }
-
 }
 
 @media screen and (max-width: 390px) {
-
-  .about__description{
+  .about__description {
     height: 45vh;
   }
 
-  .about__h1{
+  .about__h1 {
     font-size: 26px;
   }
 
-  .about__p{
+  .about__p {
     font-size: 12px;
   }
 
-  .mission__img{
+  .mission__img {
     height: 120px;
     width: 180px;
   }
-
 }
 
 @media screen and (max-width: 320px) {
-
-    .about{
-      height: calc(220vh - 70px);
-      margin-top: 10px;
+  .about {
+    height: calc(220vh - 70px);
+    margin-top: 10px;
   }
 
-  .about__description{
+  .about__description {
     height: 65vh;
   }
 
-  .mission__description{
+  .mission__description {
     height: 120vh;
   }
 
-  .mission__item{
+  .mission__item {
     height: 55vh;
     width: 85vw;
   }
 
-  .mission__h3{
+  .mission__h3 {
     font-size: 18px;
   }
 
-  .mission__p{
+  .mission__p {
     font-size: 11px;
   }
 
-
-  .mission__img{
+  .mission__img {
     height: 100px;
     width: 120px;
   }
-
 }

@@ -1,8 +1,8 @@
-:root{
+:root {
   --toggle-btn-display: none;
 }
 
-.header{
+.header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,26 +13,26 @@
   z-index: 100;
 }
 
-.nav{
+.nav {
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
 }
 
-.logo{
+.logo {
   height: 35px;
   margin-left: 10px;
 }
 
-.toggle__btn{
+.toggle__btn {
   display: none;
 }
 
-.nav__ul{
+.nav__ul {
   display: flex;
   justify-content: space-around;
   width: 500px;
@@ -41,18 +41,18 @@
   margin-right: 2vw;
 }
 
-.nav__li{
+.nav__li {
   height: 65px;
   width: auto;
   transition-duration: 0.3s;
 }
 
-.nav__li:nth-child(2){
+.nav__li:nth-child(2) {
   position: relative;
   z-index: 100;
 }
 
-.nav__link{
+.nav__link {
   text-decoration: none;
   text-align: center;
   display: flex;
@@ -64,26 +64,26 @@
   height: 100%;
 }
 
-.nav__link:hover{
+.nav__link:hover {
   color: unset;
 }
 
-.nav__icon{
+.nav__icon {
   font-size: 31px;
   margin-bottom: 3px;
 }
 
-.nav__span{
+.nav__span {
   font-size: 18px;
   color: #fcfcfc;
   transition-duration: 0.3s;
 }
 
-.nav__span:hover{
-  color: #44D9EE;
+.nav__span:hover {
+  color: #44d9ee;
 }
 
-.procedures__extension{
+.procedures__extension {
   width: 150px;
   position: absolute;
   z-index: 1;
@@ -92,92 +92,84 @@
   margin-left: -25px;
 }
 
-@media screen and (max-width: 1500px){
-
-  .logo{
+@media screen and (max-width: 1500px) {
+  .logo {
     height: 33px;
   }
 
-  .nav__span{
+  .nav__span {
     font-size: 17px;
   }
-
 }
 
-@media screen and (max-width: 1200px){
-
-  .header{
+@media screen and (max-width: 1200px) {
+  .header {
     height: 40px;
   }
 
-  .logo{
+  .logo {
     height: 25px;
   }
 
-  .nav__ul{
+  .nav__ul {
     width: 400px;
     height: 40px;
   }
 
-  .nav__li{
+  .nav__li {
     height: 40px;
   }
 
-  .nav__span{
+  .nav__span {
     font-size: 15px;
   }
-
 }
 
 @media screen and (max-width: 800px) {
-
-  :root{
+  :root {
     --toggle-btn-display: flex;
   }
 
-  .nav{
+  .nav {
     justify-content: center;
   }
-  
-  .logo{
+
+  .logo {
     height: 23px;
   }
 
-  .toggle__btn{
+  .toggle__btn {
     display: initial;
     position: absolute;
     left: 10px;
     top: 7px;
     font-size: 25px;
-    color: #44D9EE;
+    color: #44d9ee;
     z-index: 100;
   }
 
-  .nav__ul{
+  .nav__ul {
     display: none;
   }
-  
-  .nav__ul2{
+
+  .nav__ul2 {
     justify-content: space-evenly;
     align-items: center;
     height: 100vh;
     width: 100vw;
-    position:fixed;
+    position: fixed;
     top: 0;
     background-color: #262626;
     flex-direction: column;
     z-index: 99;
   }
 
-  .nav__link2{
+  .nav__link2 {
     text-decoration: none;
   }
-  
-  .nav__span2{
+
+  .nav__span2 {
     font-size: 15px;
     color: #fafafa;
   }
-
-
-
 }

@@ -1,462 +1,449 @@
-.plastic{
-    display: flex;
-    width: auto;
-    height: auto;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.plastic {
+  display: flex;
+  width: auto;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.plastic__section1{
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.plastic__section1 {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.plastic__card{
-    max-width: 1150px;
-    height: auto;
-    border-bottom: 2px solid #44D9EE;
+.plastic__card {
+  max-width: 1150px;
+  height: auto;
+  border-bottom: 2px solid #44d9ee;
 }
 
-.plastic__img{
-    width: 360px;
-    float: left;
-    margin-right: 10px;
+.plastic__img {
+  width: 360px;
+  float: left;
+  margin-right: 10px;
 }
 
-.plastic__procedure{
-    font-size: 30px;
-    text-decoration: underline #44D9EE;
-    text-align: center;
+.plastic__procedure {
+  font-size: 30px;
+  text-decoration: underline #44d9ee;
+  text-align: center;
 }
 
-.plastic__name{
-    text-decoration: underline #44D9EE;
+.plastic__name {
+  text-decoration: underline #44d9ee;
 }
 
-.plastic__description{
-    font-size: 20px;
-    padding: 0 10px;
+.plastic__description {
+  font-size: 20px;
+  padding: 0 10px;
 }
 
-.plastic__section2{
-    width: 100vw;
-    height: 120vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
+.plastic__section2 {
+  width: 100vw;
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
 }
 
-.plastic__approaches{
-    height: 100%;
-    display: grid;    
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3,40vh);
+.plastic__approaches {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 40vh);
 }
 
-.plastic__approaches__item{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    text-align: center;
+.plastic__approaches__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
 
 .plastic__approaches__item:nth-child(2),
-.plastic__approaches__item:nth-child(8){
-    background-color: #84DFEC;
-    color: #5E5E5E;
+.plastic__approaches__item:nth-child(8) {
+  background-color: #84dfec;
+  color: #5e5e5e;
 }
 
-.plastic__approaches__item:nth-child(5){
-    color: #fafafa;
+.plastic__approaches__item:nth-child(5) {
+  color: #fafafa;
 }
 
-.plastic__approaches__img{
-    height: 100%;
-    width: 100%;
+.plastic__approaches__img {
+  height: 100%;
+  width: 100%;
 }
 
-.plastic__approaches__tittle{
-    font-size: 29px;
-    margin-bottom: -50px;
+.plastic__approaches__tittle {
+  font-size: 29px;
+  margin-bottom: -50px;
 }
 
-.plastic__approaches__p{
-    font-size: 19px;
-    display: flex;
-    align-items: center;
+.plastic__approaches__p {
+  font-size: 19px;
+  display: flex;
+  align-items: center;
 }
 
-.icon__box{
-    display: flex;
-    width: 1300px;
-    height: 90%;
-    justify-content: space-evenly;
+.icon__box {
+  display: flex;
+  width: 1300px;
+  height: 90%;
+  justify-content: space-evenly;
 }
 
-.plastic__item{
-    height: 100%;
-    width: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+.plastic__item {
+  height: 100%;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-.plastic__icon{
-    color: #005989;
-    font-size: 45px;
+.plastic__icon {
+  color: #005989;
+  font-size: 45px;
 }
 
-.plastic__icon--png{
-    width: 50px;
+.plastic__icon--png {
+  width: 50px;
 }
 
-.plastic__span{
-    color: #5E5E5E;
-    font-size: 24px;
+.plastic__span {
+  color: #5e5e5e;
+  font-size: 24px;
 }
 
-.icon__p{
-    display: inline;
-    font-size: 20px;
-    text-align: center;
-    color: #5E5E5E;
+.icon__p {
+  display: inline;
+  font-size: 20px;
+  text-align: center;
+  color: #5e5e5e;
 }
 
-.plastic__contact{
-    height: 50vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.plastic__contact {
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.plastic__contact__h2{
-    font-size: 45px;
-    margin-bottom: 10vh;
-    text-decoration: underline 3px solid #44D9EE;
+.plastic__contact__h2 {
+  font-size: 45px;
+  margin-bottom: 10vh;
+  text-decoration: underline 3px solid #44d9ee;
 }
 
-.plastic__contact__container{
-    display: flex;
-    justify-content: space-evenly;
-    height: auto;
-    width: 35vw;
-    border: 2px solid #44D9EE;
-    border-radius: 15px;
+.plastic__contact__container {
+  display: flex;
+  justify-content: space-evenly;
+  height: auto;
+  width: 35vw;
+  border: 2px solid #44d9ee;
+  border-radius: 15px;
 }
 
-.plastic__contact__item{
-    height: 15vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #fafafa;
-    transition-duration: 0.3s;
+.plastic__contact__item {
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fafafa;
+  transition-duration: 0.3s;
 }
 
-.plastic__contact__item:hover{
-    color:#44D9EE;
+.plastic__contact__item:hover {
+  color: #44d9ee;
 }
 
-.plastic__contact__icon{
-    font-size: 35px;
-    margin-bottom: 10px;
+.plastic__contact__icon {
+  font-size: 35px;
+  margin-bottom: 10px;
 }
 
-.plastic__contact__span{
-    font-size: 17px;
+.plastic__contact__span {
+  font-size: 17px;
 }
 
 @media screen and (max-width: 1700px) {
-
-    .plastic__approaches__p{
-        font-size: 19px;
-        padding: 0 10px;
-    }
-
+  .plastic__approaches__p {
+    font-size: 19px;
+    padding: 0 10px;
+  }
 }
 
 @media screen and (max-width: 1500px) {
+  .plastic__img {
+    width: 340px;
+  }
 
-    .plastic__img{
-        width: 340px;
-    }
+  .plastic__procedure {
+    font-size: 28px;
+  }
 
-    .plastic__procedure{
-        font-size: 28px;
-    }
+  .plastic__doctor__name {
+    font-size: 22px;
+  }
 
-    .plastic__doctor__name{
-        font-size: 22px;
-    }
+  .plastic__description {
+    font-size: 18px;
+  }
 
-    .plastic__description{
-        font-size: 18px;
-    }
+  .plastic__span {
+    font-size: 22px;
+  }
 
-    .plastic__span{
-        font-size: 22px;
-    }
+  .plastic__icon__p {
+    font-size: 18px;
+  }
 
-    .plastic__icon__p{
-        font-size: 18px;
-    }
+  .plastic__approaches__tittle {
+    font-size: 25px;
+  }
 
-    .plastic__approaches__tittle{
-        font-size: 25px;
-    }
-    
-    .plastic__approaches__p{
-        font-size: 17px;
-    }
+  .plastic__approaches__p {
+    font-size: 17px;
+  }
 
-    .plastic__contact__icon{
-        font-size: 33px;
-    }
-    
-    .plastic__contact__span{
-        font-size: 15px;
-    }
+  .plastic__contact__icon {
+    font-size: 33px;
+  }
 
-    .plastic__contact__h2{
-        font-size: 42px;
-    }
+  .plastic__contact__span {
+    font-size: 15px;
+  }
 
+  .plastic__contact__h2 {
+    font-size: 42px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
+  .plastic__card {
+    width: 95vw;
+  }
 
-    .plastic__card{
-        width: 95vw;
-    }
+  .plastic__img {
+    width: 300px;
+  }
 
-    .plastic__img{
-        width: 300px;
-    }
+  .plastic__procedure {
+    font-size: 26px;
+  }
 
-    .plastic__procedure{
-        font-size: 26px;
-    }
+  .plastic__doctor__name {
+    font-size: 20px;
+  }
 
-    .plastic__doctor__name{
-        font-size: 20px;
-    }
+  .plastic__description {
+    font-size: 16px;
+  }
 
-    .plastic__description{
-        font-size: 16px;
-    }
+  .plastic__approaches__tittle {
+    font-size: 23px;
+  }
 
-    .plastic__approaches__tittle{
-        font-size: 23px;
-    }
-    
-    .plastic__contact__h2{
-      font-size: 40px;
-    }
+  .plastic__contact__h2 {
+    font-size: 40px;
+  }
 
-      .plastic__contact__icon{
-        font-size: 31px;
-    }
-    
-
+  .plastic__contact__icon {
+    font-size: 31px;
+  }
 }
 
 @media screen and (max-width: 900px) {
+  .plastic__img {
+    height: 330px;
+  }
 
-    .plastic__img{
-        height: 330px;
-    }
+  .plastic__procedure {
+    font-size: 24px;
+  }
 
-    .plastic__procedure{
-        font-size: 24px;
-    }
+  .plastic__doctor__name {
+    font-size: 19px;
+  }
 
-    .plastic__doctor__name{
-        font-size: 19px;
-    }
+  .plastic__description {
+    font-size: 15px;
+  }
 
-    .plastic__description{
-        font-size: 15px;
-    }
-    
-    .plastic__section2{
-        height: 90vh;
-    }
+  .plastic__section2 {
+    height: 90vh;
+  }
 
-    .plastic__approaches{
-        height: 90vh;
-        grid-template-rows: repeat(3,30vh);
-    }
+  .plastic__approaches {
+    height: 90vh;
+    grid-template-rows: repeat(3, 30vh);
+  }
 
-    .plastic__approaches__tittle{
-        font-size: 21px;
-    }
+  .plastic__approaches__tittle {
+    font-size: 21px;
+  }
 
-    .plastic__approaches__p{
-        font-size: 15px;
-        padding: 0 3px;
-    }
+  .plastic__approaches__p {
+    font-size: 15px;
+    padding: 0 3px;
+  }
 
-    .plastic__section4{
-        height: 600px;
-    }
+  .plastic__section4 {
+    height: 600px;
+  }
 
-    .plastic__other{
-        margin-right: 50px;
-        width: 300px;
-    }
+  .plastic__other {
+    margin-right: 50px;
+    width: 300px;
+  }
 
-    .plastic__other__h2{
-        font-size: 32px;
-    }
-    
-    .plastic__other__p{
-        font-size: 19px;
-    }
+  .plastic__other__h2 {
+    font-size: 32px;
+  }
+
+  .plastic__other__p {
+    font-size: 19px;
+  }
 }
 
 @media screen and (max-width: 800px) {
+  .plastic__card {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 70vh;
+  }
 
-    .plastic__card{
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        height: 70vh;
-    }
+  .plastic__doctor__name {
+    text-align: center;
+  }
 
-    .plastic__doctor__name{
-        text-align: center;
-    }
+  .plastic__text {
+    margin-bottom: 10px;
+  }
 
-    .plastic__text{
-        margin-bottom: 10px;
-    }
+  .plastic__img {
+    width: 360px;
+    margin-right: 0;
+  }
 
-    .plastic__img{
-        width: 360px;
-        margin-right: 0;
-    }
+  .plastic__icon {
+    height: 50px;
+  }
 
-    .plastic__icon{
-        height: 50px;
-    }
+  .plastic__span {
+    margin-top: 20px;
+    font-size: 18px;
+  }
 
-    .plastic__span{
-        margin-top: 20px;
-        font-size: 18px;
-    }
+  .plastic__icon__p {
+    font-size: 15px;
+  }
 
-    .plastic__icon__p{
-        font-size: 15px;
-    }
+  .plastic__section2 {
+    height: 75vh;
+  }
 
-    .plastic__section2{
-        height: 75vh;
-    }
+  .plastic__approaches {
+    height: 75vh;
+    grid-template-rows: repeat(3, 25vh);
+  }
 
-    .plastic__approaches{
-        height: 75vh;
-        grid-template-rows: repeat(3,25vh);
-    }
+  .plastic__approaches__tittle {
+    font-size: 19px;
+  }
 
-    .plastic__approaches__tittle{
-        font-size: 19px;
-    }
+  .plastic__approaches__p {
+    font-size: 13px;
+    padding: 0 10px;
+  }
 
-    .plastic__approaches__p{
-        font-size: 13px;
-        padding: 0 10px;
-    }
+  .plastic__contact__container {
+    width: 50vw;
+  }
 
-    .plastic__contact__container{
-        width: 50vw;
-    }
+  .plastic__contact__h2 {
+    font-size: 36px;
+  }
 
-    .plastic__contact__h2{
-        font-size: 36px;
-      }
-  
-    .plastic__contact__icon{
-      font-size: 27px;
-    }
+  .plastic__contact__icon {
+    font-size: 27px;
+  }
 }
 
 @media screen and (max-width: 600px) {
+  .plastic__section1 {
+    margin-top: 100px;
+    height: 650px;
+  }
 
-    .plastic__section1{
-        margin-top: 100px;
-        height: 650px;
-    }
+  .plastic__card {
+    height: 600px;
+  }
 
-    .plastic__card{
-        height: 600px;
-    }
+  .plastic__text {
+    margin: 0;
+  }
 
-    .plastic__text{
-        margin: 0;
-    }
+  .plastic__section2 {
+    height: 270vh;
+    min-width: 100vw;
+    display: flex;
+  }
 
-    .plastic__section2{
-        height: 270vh;
-        min-width: 100vw;
-        display: flex;
-    }
-    
-    .plastic__approaches{
-        height: 270vh;
-        display: grid;    
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(6,45vh);
-    }
+  .plastic__approaches {
+    height: 270vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 45vh);
+  }
 
-    .plastic__approaches__tittle{
-        font-size: 20px;
-    }
+  .plastic__approaches__tittle {
+    font-size: 20px;
+  }
 
-    .plastic__approaches__item:nth-child(3),
-    .plastic__approaches__item:nth-child(6),
-    .plastic__approaches__item:nth-child(9){
-      display: none;
-    }
+  .plastic__approaches__item:nth-child(3),
+  .plastic__approaches__item:nth-child(6),
+  .plastic__approaches__item:nth-child(9) {
+    display: none;
+  }
 
-    .plastic__approaches__p{
-        font-size: 16px;
-    }
+  .plastic__approaches__p {
+    font-size: 16px;
+  }
 
-    .plastic__contact__container{
-        width: 65vw;
-    }
+  .plastic__contact__container {
+    width: 65vw;
+  }
 
-    .plastic__contact__h2{
-        font-size: 30px;
-      }
-  
-    .plastic__contact__icon{
-      font-size: 25px;
-    }
+  .plastic__contact__h2 {
+    font-size: 30px;
+  }
 
+  .plastic__contact__icon {
+    font-size: 25px;
+  }
 }
 
 @media screen and (max-width: 410px) {
+  .plastic__section1 {
+    margin-top: 140px;
+  }
 
-    .plastic__section1{
-        margin-top: 140px;
-    }
-
-    .plastic__img{
-        height: 300px;
-        width: 300px;
-    }
-
+  .plastic__img {
+    height: 300px;
+    width: 300px;
+  }
 }

@@ -1,13 +1,13 @@
-import { useContext } from "react";
-import { Context } from "../Context/Context";
-import { motion } from "framer-motion";
-import ensenada from "/ensenada.avif";
-import rosarito from "/rosarito.avif";
-import sanDiego from "/sandiego.avif";
-import losAngeles from "/losangeles.avif";
-import tijuana from "/tijuana.avif";
-import beverly from "/beverly.avif";
-import TravelInfo from "./TravelInfo";
+import {useContext} from 'react';
+import {Context} from '../Context/Context';
+import {motion} from 'framer-motion';
+import ensenada from '/ensenada.avif';
+import rosarito from '/rosarito.avif';
+import sanDiego from '/sandiego.avif';
+import losAngeles from '/losangeles.avif';
+import tijuana from '/tijuana.avif';
+import beverly from '/beverly.avif';
+import TravelInfo from './TravelInfo';
 
 function TravelBox() {
   const {
@@ -24,51 +24,51 @@ function TravelBox() {
   } = useContext(Context);
   const citys = [
     {
-      name: "Ensenada",
+      name: 'Ensenada',
       img: ensenada,
       setState: setIsEnsenada,
       getState: isEnsenada,
-      btnText: "Read More",
+      btnText: 'Read More',
     },
     {
-      name: "Rosarito",
+      name: 'Rosarito',
       img: rosarito,
       setState: setIsRosarito,
       getState: isRosarito,
-      btnText: "Read More",
+      btnText: 'Read More',
     },
     {
-      name: "San Diego",
+      name: 'San Diego',
       img: sanDiego,
       setState: setIsSandiego,
       getState: isSandiego,
-      btnText: "Read More",
+      btnText: 'Read More',
     },
     {
-      name: "Tijuana",
+      name: 'Tijuana',
       img: tijuana,
       setState: setIsTijuana,
       getState: isTijuana,
-      btnText: "Read More",
+      btnText: 'Read More',
     },
     {
-      name: "Los Angeles",
+      name: 'Los Angeles',
       img: losAngeles,
       setState: setIsLa,
       getState: isLa,
-      btnText: "Read More",
+      btnText: 'Read More',
     },
     {
-      name: "Beverly Hills & Rodeo Drive",
+      name: 'Beverly Hills & Rodeo Drive',
       img: beverly,
-      setState: "none",
-      getState: "none",
-      btnText: "L.A Include",
+      setState: 'none',
+      getState: 'none',
+      btnText: 'L.A Include',
     },
   ];
   // Framer Motion Variants //
   const itemsAnimation = {
-    start: { opacity: 0, y: -50 },
+    start: {opacity: 0, y: -50},
     end: {
       opacity: 1,
       y: 0,
@@ -83,24 +83,24 @@ function TravelBox() {
     <>
       {/* Destinations Section 2 */}
       <motion.div
-        className="destinations__section2"
+        className='destinations__section2'
         variants={itemsAnimation}
-        initial="start"
-        whileInView="end"
-        viewport={{ amount: 0.5, once: true }}
+        initial='start'
+        whileInView='end'
+        viewport={{amount: 0.5, once: true}}
       >
         {citys.map((cityName, index) => (
           <motion.div
-            className="destinations__section2__item"
+            className='destinations__section2__item'
             style={{
               background: `url(${cityName.img})  no-repeat right/var(--travel-box-size1)`,
             }}
             key={index}
             variants={itemsAnimation}
           >
-            <h3 className="destinations__section2__h3">{cityName.name}</h3>
+            <h3 className='destinations__section2__h3'>{cityName.name}</h3>
             <span
-              className="know__btn"
+              className='know__btn'
               onClick={() => cityName.setState(!cityName.getState)}
             >
               {cityName.btnText}

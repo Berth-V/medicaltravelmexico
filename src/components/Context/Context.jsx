@@ -1,8 +1,8 @@
-import { useState, createContext } from "react";
+import {useState, createContext} from 'react';
 
 export const Context = createContext();
 
-export const Data = ({ children }) => {
+export const Data = ({children}) => {
   // Destinations/TravelBox/TravelInfo States //
   const [isEnsenada, setIsEnsenada] = useState(false);
   const [isRosarito, setIsRosarito] = useState(false);
