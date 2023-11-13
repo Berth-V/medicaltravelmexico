@@ -11,6 +11,7 @@ function About() {
           className="about__h1"
           initial={{ x: 100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
+          transition={{ delay: 0.3 }}
         >
           About Medical Travel México
         </motion.h1>
@@ -18,6 +19,7 @@ function About() {
           className="about__p"
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
+          transition={{ delay: 0.3 }}
         >
           Medical Travel Mexico is a binational medical travel facilitation
           company founded in the city of Tijuana, Baja Caligornia.
@@ -41,6 +43,7 @@ function About() {
           className="mission__item"
           initial={{ x: 100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
+          transition={{ delay: 0.3 }}
         >
           <h3 className="mission__h3">Mission</h3>
           <p className="mission__p">
@@ -57,6 +60,7 @@ function About() {
           className="mission__item"
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
+          transition={{ delay: 0.3 }}
         >
           <h3 className="mission__h3">Vision</h3>
           <p className="mission__p">
