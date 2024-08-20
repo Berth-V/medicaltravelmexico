@@ -1,21 +1,18 @@
-import {useContext} from 'react';
-import {Context} from '../Context/Context';
-
-function TravelInfo() {
-  const {
-    isEnsenada,
-    setIsEnsenada,
-    isRosarito,
-    setIsRosarito,
-    isSandiego,
-    setIsSandiego,
-    isTijuana,
-    setIsTijuana,
-    isLa,
-    setIsLa,
-  } = useContext(Context);
+function TravelInfo(
+  isEnsenada,
+  setIsEnsenada,
+  isRosarito,
+  setIsRosarito,
+  isSandiego,
+  setIsSandiego,
+  isTijuana,
+  setIsTijuana,
+  isLa,
+  setIsLa,
+) {
   return (
     <>
+      {console.log(isEnsenada)}
       <div
         className='ensenada__info'
         style={{display: isEnsenada ? 'flex' : 'none'}}
@@ -23,7 +20,7 @@ function TravelInfo() {
         <div className='ensenada__info__container'>
           <span
             className='ensenada__close__btn'
-            onClick={() => setIsEnsenada(!isEnsenada)}
+            onClick={() => setIsEnsenada(false)}
           >
             X
           </span>
@@ -97,7 +94,7 @@ function TravelInfo() {
         <div className='rosarito__info__container'>
           <span
             className='rosarito__close__btn'
-            onClick={() => setIsRosarito(!isRosarito)}
+            onClick={() => setIsRosarito(false)}
           >
             X
           </span>
@@ -153,7 +150,7 @@ function TravelInfo() {
         <div className='sandiego__info__container'>
           <span
             className='sandiego__close__btn'
-            onClick={() => setIsSandiego(!isSandiego)}
+            onClick={() => setIsSandiego(false)}
           >
             X
           </span>
@@ -222,7 +219,7 @@ function TravelInfo() {
         <div className='tijuana__info__container'>
           <span
             className='tijuana__close__btn'
-            onClick={() => setIsTijuana(!isTijuana)}
+            onClick={() => setIsTijuana(false)}
           >
             X
           </span>
@@ -289,7 +286,7 @@ function TravelInfo() {
       </div>
       <div className='la__info' style={{display: isLa ? 'flex' : 'none'}}>
         <div className='la__info__container'>
-          <span className='la__close__btn' onClick={() => setIsLa(!isLa)}>
+          <span className='la__close__btn' onClick={() => setIsLa(false)}>
             X
           </span>
           <h2 className='la__info__h2'>Los Angeles</h2>

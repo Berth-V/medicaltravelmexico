@@ -1,4 +1,9 @@
 import './Home.css';
+import {
+  frontPageAnimations,
+  proceduresCardsAnimation,
+  travelAnimations,
+} from './framerMotionVariants';
 import portada from '/portada.avif';
 import bariatric from '/bariatric icon.png';
 import oto from '/oto icon.png';
@@ -17,41 +22,6 @@ import {AiFillInstagram} from 'react-icons/ai';
 function Home() {
   const ref = useRef();
   const isInView = useInView(ref, {once: true, amount: 0.4});
-  //Framer Motion Variants//
-  const frontPageAnimations = {
-    start: {y: -100, opacity: 0},
-    end: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-        duration: 1,
-      },
-    },
-  };
-  const proceduresCardsAnimation = {
-    start: {y: -100, opacity: 0},
-    end: {
-      y: 0,
-      opacity: 1,
-      rotateY: [0, 360, 0],
-      transition: {
-        staggerChildren: 0.4,
-        duration: 0.6,
-      },
-    },
-  };
-  const travelAnimations = {
-    start: {y: 100, opacity: 0},
-    end: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-        duration: 0.6,
-      },
-    },
-  };
   return (
     <div className='home'>
       <section
