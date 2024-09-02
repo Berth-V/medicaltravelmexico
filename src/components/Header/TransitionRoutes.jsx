@@ -24,6 +24,7 @@ function TransitionRoutes() {
 
   return (
     <Suspense fallback={<h1>Cargando</h1>}>
+      {console.log(location)}
       <AnimatePresence>
         <Routes location={location} key={location.pathname}>
           <Route path='/' element={<Home />} />

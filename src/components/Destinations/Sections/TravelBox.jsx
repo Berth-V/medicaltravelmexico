@@ -1,13 +1,21 @@
 import {useState} from 'react';
 import {motion} from 'framer-motion';
-import {citys} from './destinationsData';
+import {citys} from '../destinationsData';
 import TravelInfo from './TravelInfo';
 
 function TravelBox() {
+  const initialDestInfo = {};
   const [infoOpen, setInfoOpen] = useState(false);
-  const [destName, setDestName] = useState();
-  const [destTittle, setDestTittle] = useState();
-  const [destText, setDestText] = useState();
+  const [destInfo, setDestInfo] = useState(initialDestInfo);
+
+  const clickCityDetector = (cityTittle, cityName, cityTxt) => {
+    setInfoOpen(true);
+    setDestInfo({
+      citytittle: cityTittle,
+      cityclassname: cityName,
+      citytext: cityTxt, 
+    });
+  }
 
   // Framer Motion Variants //
   const itemsAnimation = {
@@ -46,10 +54,7 @@ function TravelBox() {
             <span
               className='know__btn'
               onClick={() => {
-                setInfoOpen(true);
-                setDestTittle(city.name);
-                setDestName(city.classname);
-                setDestText(city.destInfo);
+                clickCityDetector(city.name, city.classname, city.destInfo)
               }}
             >
               {city.btnText}
@@ -57,11 +62,12 @@ function TravelBox() {
           </motion.div>
         ))}
         <TravelInfo
-          destTittle={destTittle}
-          destName={destName}
-          destText={destText}
+          //destTittle={destTittle}
+          //destName={destName}
+          //destText={destText}
           infoOpen={infoOpen}
           setInfoOpen={setInfoOpen}
+          destInfo={destInfo}
         />
       </motion.div>
     </>
