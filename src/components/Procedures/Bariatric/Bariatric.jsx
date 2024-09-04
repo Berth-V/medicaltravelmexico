@@ -10,11 +10,11 @@ import gastricSleeve from '/gastric sleeve.png';
 import baipas from '/baipas.png';
 import biliopancreatic from '/biliopancreatic.png';
 import other from '/other.avif';
+import Contact from '../../Share/Contact';
 import {motion} from 'framer-motion';
-import {IoLogoWhatsapp, IoIosMail} from 'react-icons/io';
-import {AiFillInstagram} from 'react-icons/ai';
 
-function Bariatric() {
+function Bariatric(bariatricPath) {
+  const {newPath} = bariatricPath;
   const introductionAnimation = {
     start: {opacity: 0, x: 100},
     end: {
@@ -201,38 +201,7 @@ function Bariatric() {
           </motion.p>
         </div>
       </div>
-      <div className='bariatric__contact'>
-        <h2 className='bariatric__contact__h2'>Contact Us</h2>
-        <div className='bariatric__contact__container'>
-          <a
-            className='bariatric__contact__item'
-            href='mailto:travelmedicalmx@gmail.com'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <IoIosMail className='bariatric__contact__icon' />
-            <span className='bariatric__contact__span'>E-Mail</span>
-          </a>
-          <a
-            className='bariatric__contact__item'
-            href='https://wa.me/526981032939'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <IoLogoWhatsapp className='bariatric__contact__icon' />
-            <span className='bariatric__contact__span'>WhatsApp</span>
-          </a>
-          <a
-            className='bariatric__contact__item'
-            href='https://www.instagram.com/medical.travel.mx/'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <AiFillInstagram className='bariatric__contact__icon' />
-            <span className='bariatric__contact__span'>Instagram</span>
-          </a>
-        </div>
-      </div>
+      <Contact newPath={newPath} />
     </div>
   );
 }

@@ -6,11 +6,12 @@ import body1 from '/body1.avif';
 import body2 from '/body2.avif';
 import beauty1 from '/beauty1.avif';
 import beauty2 from '/beauty2.avif';
+import Contact from '../../Share/Contact';
 import {motion} from 'framer-motion';
-import {IoLogoWhatsapp, IoIosMail} from 'react-icons/io';
-import {AiFillInstagram} from 'react-icons/ai';
 
-function PlasticSurgery() {
+function PlasticSurgery(plasticPath) {
+  const {newPath} = plasticPath;
+  console.log(newPath);
   const introductionAnimation = {
     start: {opacity: 0, x: 100},
     end: {
@@ -114,38 +115,7 @@ function PlasticSurgery() {
           </div>
         </div>
       </div>
-      <div className='plastic__contact'>
-        <h2 className='plastic__contact__h2'>Contact Us</h2>
-        <div className='plastic__contact__container'>
-          <a
-            className='plastic__contact__item'
-            href='mailto:travelmedicalmx@gmail.com'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <IoIosMail className='plastic__contact__icon' />
-            <span className='plastic__contact__span'>E-Mail</span>
-          </a>
-          <a
-            className='plastic__contact__item'
-            href='https://wa.me/526981032939'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <IoLogoWhatsapp className='plastic__contact__icon' />
-            <span className='plastic__contact__span'>WhatsApp</span>
-          </a>
-          <a
-            className='plastic__contact__item'
-            href='https://www.instagram.com/medical.travel.mx/'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <AiFillInstagram className='plastic__contact__icon' />
-            <span className='plastic__contact__span'>Instagram</span>
-          </a>
-        </div>
-      </div>
+      <Contact newPath={newPath} />
     </div>
   );
 }

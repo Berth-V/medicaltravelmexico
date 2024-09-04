@@ -12,11 +12,10 @@ import bichectomy from '/bichectomy.png';
 import blepharoplasty from '/blepharoplasty.png';
 import otoplasty from '/otoplasty.png';
 import tonsillectomy from '/tonsillectomy.png';
-import {IoLogoWhatsapp, IoIosMail} from 'react-icons/io';
-import {AiFillInstagram} from 'react-icons/ai';
+import Contact from '../../Share/Contact';
 import {motion} from 'framer-motion';
 
-function Otolaryngologist() {
+function Otolaryngologist(otoPath) {
   //Framer Motion Values//
   const introductionAnimation = {
     start: {opacity: 0, x: 100},
@@ -26,6 +25,7 @@ function Otolaryngologist() {
       transition: {staggerChildren: 0.2},
     },
   };
+  const {newPath} = otoPath;
 
   return (
     <div className='oto'>
@@ -196,38 +196,7 @@ function Otolaryngologist() {
           </div>
         </div>
       </div>
-      <div className='oto__contact'>
-        <h2 className='oto__contact__h2'>Contact Us</h2>
-        <div className='oto__contact__container'>
-          <a
-            className='oto__contact__item'
-            href='mailto:travelmedicalmx@gmail.com'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <IoIosMail className='oto__contact__icon' />
-            <span className='oto__contact__span'>E-Mail</span>
-          </a>
-          <a
-            className='oto__contact__item'
-            href='https://wa.me/526981032939'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <IoLogoWhatsapp className='oto__contact__icon' />
-            <span className='oto__contact__span'>WhatsApp</span>
-          </a>
-          <a
-            className='oto__contact__item'
-            href='https://www.instagram.com/medical.travel.mx/'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <AiFillInstagram className='oto__contact__icon' />
-            <span className='oto__contact__span'>Instagram</span>
-          </a>
-        </div>
-      </div>
+      <Contact newPath={newPath} />
     </div>
   );
 }

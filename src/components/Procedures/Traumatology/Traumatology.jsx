@@ -10,11 +10,11 @@ import spine from '/spine.png';
 import hip from '/hip.png';
 import fracture from '/fracture.png';
 import regMedicine from '/regmedicine.avif';
-import {IoLogoWhatsapp, IoIosMail} from 'react-icons/io';
-import {AiFillInstagram} from 'react-icons/ai';
+import Contact from '../../Share/Contact';
 import {motion} from 'framer-motion';
 
-function Traumatology() {
+function Traumatology(traumaPath) {
+  const {newPath} = traumaPath;
   //Framer Motion//
   const introductionAnimation = {
     start: {opacity: 0, x: 100},
@@ -24,6 +24,7 @@ function Traumatology() {
       transition: {staggerChildren: 0.2},
     },
   };
+
   return (
     <div className='trauma'>
       <motion.div
@@ -189,38 +190,7 @@ function Traumatology() {
           biological material, to recreate cells and rebuild tissues and organs.
         </motion.p>
       </div>
-      <div className='trauma__contact'>
-        <h2 className='trauma__contact__h2'>Contact Us</h2>
-        <div className='trauma__contact__container'>
-          <a
-            className='trauma__contact__item'
-            href='mailto:travelmedicalmx@gmail.com'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <IoIosMail className='trauma__contact__icon' />
-            <span className='trauma__contact__span'>E-Mail</span>
-          </a>
-          <a
-            className='trauma__contact__item'
-            href='https://wa.me/526981032939'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <IoLogoWhatsapp className='trauma__contact__icon' />
-            <span className='trauma__contact__span'>WhatsApp</span>
-          </a>
-          <a
-            className='trauma__contact__item'
-            href='https://www.instagram.com/medical.travel.mx/'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <AiFillInstagram className='trauma__contact__icon' />
-            <span className='trauma__contact__span'>Instagram</span>
-          </a>
-        </div>
-      </div>
+      <Contact newPath={newPath} />
     </div>
   );
 }

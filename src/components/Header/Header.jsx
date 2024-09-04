@@ -63,17 +63,17 @@ function Header() {
                   </NavLink>
                 </li>
                 <li className='nav__li'>
-                  <NavLink className='nav__link' to='/otolaryngologist'>
+                  <NavLink className='nav__link' to='/oto'>
                     <span className='nav__span'>Otolaryngologist</span>
                   </NavLink>
                 </li>
                 <li className='nav__li'>
-                  <NavLink className='nav__link' to='/plasticSurgery'>
+                  <NavLink className='nav__link' to='/plastic'>
                     <span className='nav__span'>Plastic Surgery</span>
                   </NavLink>
                 </li>
                 <li className='nav__li'>
-                  <NavLink className='nav__link' to='/traumatology'>
+                  <NavLink className='nav__link' to='/trauma'>
                     <span className='nav__span'>Traumatology</span>
                   </NavLink>
                 </li>
