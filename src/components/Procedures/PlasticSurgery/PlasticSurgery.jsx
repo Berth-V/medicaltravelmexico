@@ -6,7 +6,7 @@ import body1 from '/body1.avif';
 import body2 from '/body2.avif';
 import beauty1 from '/beauty1.avif';
 import beauty2 from '/beauty2.avif';
-import Contact from '../../Share/Contact';
+import Contact from '../../Shared/Contact';
 import {motion} from 'framer-motion';
 
 function PlasticSurgery(plasticPath) {
@@ -52,7 +52,7 @@ function PlasticSurgery(plasticPath) {
               className='plastic__description'
               variants={introductionAnimation}
             >
-              The search for beauty and self-confidence is an aspiration shared
+              The search for beauty and self-confidence is an aspiration Sharedd
               by many people. As a plastic surgeon, my goal is to help patients
               achieve that desired look safely and naturally.
               <br />

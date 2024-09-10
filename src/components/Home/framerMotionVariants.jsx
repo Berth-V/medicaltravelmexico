@@ -24,7 +24,18 @@ export const proceduresCardsAnimation = {
   },
 };
 
-export const travelAnimations = {
+export const whyComeAnimation = {
+  start: {y: -100, opacity: 0},
+  end: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.3,
+    },
+  },
+};
+
+export const airplaneAnimations = {
   start: {y: 100, opacity: 0},
   end: {
     y: 0,
@@ -32,6 +43,17 @@ export const travelAnimations = {
     transition: {
       staggerChildren: 0.2,
       duration: 0.6,
+    },
+  },
+};
+
+export const travelingAnimations = {
+  start: {opacity: 0},
+  end: {
+    opacity: 1,
+    transition: {
+      duration: 0.3,
+      delay: 0.4,
     },
   },
 };

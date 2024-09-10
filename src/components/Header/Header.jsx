@@ -54,6 +54,7 @@ function Header() {
               {/* Dropdown Nav */}
               <motion.div
                 className='procedures__extension'
+                // Framer Motion Attributtes //
                 variants={dropDownNavVariants}
                 animate={isProcedureHover ? 'show' : 'hide'}
               >
@@ -99,6 +100,7 @@ function Header() {
       {/* ul For Mobile Mode */}
       <motion.div
         className='nav__ul2'
+        // Framer Motion Attributtes //
         variants={toggleAnimation}
         animate={isOpen ? 'open' : 'closed'}
       >

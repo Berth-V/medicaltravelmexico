@@ -10,7 +10,7 @@ import gastricSleeve from '/gastric sleeve.png';
 import baipas from '/baipas.png';
 import biliopancreatic from '/biliopancreatic.png';
 import other from '/other.avif';
-import Contact from '../../Share/Contact';
+import Contact from '../../Shared/Contact';
 import {motion} from 'framer-motion';
 
 function Bariatric(bariatricPath) {

@@ -10,7 +10,7 @@ import spine from '/spine.png';
 import hip from '/hip.png';
 import fracture from '/fracture.png';
 import regMedicine from '/regmedicine.avif';
-import Contact from '../../Share/Contact';
+import Contact from '../../Shared/Contact';
 import {motion} from 'framer-motion';
 
 function Traumatology(traumaPath) {

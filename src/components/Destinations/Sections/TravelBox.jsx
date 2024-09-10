@@ -13,9 +13,9 @@ function TravelBox() {
     setDestInfo({
       citytittle: cityTittle,
       cityclassname: cityName,
-      citytext: cityTxt, 
+      citytext: cityTxt,
     });
-  }
+  };
 
   // Framer Motion Variants //
   const itemsAnimation = {
@@ -54,7 +54,7 @@ function TravelBox() {
             <span
               className='know__btn'
               onClick={() => {
-                clickCityDetector(city.name, city.classname, city.destInfo)
+                clickCityDetector(city.name, city.classname, city.destInfo);
               }}
             >
               {city.btnText}
@@ -62,9 +62,6 @@ function TravelBox() {
           </motion.div>
         ))}
         <TravelInfo
-          //destTittle={destTittle}
-          //destName={destName}
-          //destText={destText}
           infoOpen={infoOpen}
           setInfoOpen={setInfoOpen}
           destInfo={destInfo}

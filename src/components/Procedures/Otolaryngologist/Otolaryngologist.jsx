@@ -12,7 +12,7 @@ import bichectomy from '/bichectomy.png';
 import blepharoplasty from '/blepharoplasty.png';
 import otoplasty from '/otoplasty.png';
 import tonsillectomy from '/tonsillectomy.png';
-import Contact from '../../Share/Contact';
+import Contact from '../../Shared/Contact';
 import {motion} from 'framer-motion';
 
 function Otolaryngologist(otoPath) {
