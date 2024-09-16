@@ -7,6 +7,7 @@
   align-items: center;
 }
 
+/* Section1 */
 .plastic__section1 {
   height: 100vh;
   width: 100vw;
@@ -42,6 +43,7 @@
   padding: 0 10px;
 }
 
+/* Section2 */
 .plastic__section2 {
   width: 100vw;
   height: 120vh;
@@ -94,43 +96,7 @@
   align-items: center;
 }
 
-.icon__box {
-  display: flex;
-  width: 1300px;
-  height: 90%;
-  justify-content: space-evenly;
-}
-
-.plastic__item {
-  height: 100%;
-  width: 250px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.plastic__icon {
-  color: #005989;
-  font-size: 45px;
-}
-
-.plastic__icon--png {
-  width: 50px;
-}
-
-.plastic__span {
-  color: #5e5e5e;
-  font-size: 24px;
-}
-
-.icon__p {
-  display: inline;
-  font-size: 20px;
-  text-align: center;
-  color: #5e5e5e;
-}
-
+/* Contact */
 .plastic__contact {
   height: 50vh;
   width: 100vw;
@@ -186,6 +152,7 @@
 }
 
 @media screen and (max-width: 1500px) {
+  /* Section1 */
   .plastic__img {
     width: 340px;
   }
@@ -210,6 +177,7 @@
     font-size: 18px;
   }
 
+  /* Section2 */
   .plastic__approaches__tittle {
     font-size: 25px;
   }
@@ -218,6 +186,7 @@
     font-size: 17px;
   }
 
+  /* Contact */
   .plastic__contact__icon {
     font-size: 33px;
   }
@@ -232,6 +201,7 @@
 }
 
 @media screen and (max-width: 1200px) {
+  /* Section1 */
   .plastic__card {
     width: 95vw;
   }
@@ -252,10 +222,12 @@
     font-size: 16px;
   }
 
+  /* Section2 */
   .plastic__approaches__tittle {
     font-size: 23px;
   }
 
+  /* Contact */
   .plastic__contact__h2 {
     font-size: 40px;
   }
@@ -266,6 +238,7 @@
 }
 
 @media screen and (max-width: 900px) {
+  /* Section1 */
   .plastic__img {
     height: 330px;
   }
@@ -282,6 +255,7 @@
     font-size: 15px;
   }
 
+  /* Section2 */
   .plastic__section2 {
     height: 90vh;
   }
@@ -299,26 +273,10 @@
     font-size: 15px;
     padding: 0 3px;
   }
-
-  .plastic__section4 {
-    height: 600px;
-  }
-
-  .plastic__other {
-    margin-right: 50px;
-    width: 300px;
-  }
-
-  .plastic__other__h2 {
-    font-size: 32px;
-  }
-
-  .plastic__other__p {
-    font-size: 19px;
-  }
 }
 
 @media screen and (max-width: 800px) {
+  /* Section1 */
   .plastic__card {
     display: flex;
     flex-direction: column-reverse;
@@ -326,32 +284,20 @@
     height: 70vh;
   }
 
-  .plastic__doctor__name {
-    text-align: center;
+  .plastic__img {
+    width: 360px;
+    margin-right: 0;
   }
 
   .plastic__text {
     margin-bottom: 10px;
   }
 
-  .plastic__img {
-    width: 360px;
-    margin-right: 0;
+  .plastic__doctor__name {
+    text-align: center;
   }
 
-  .plastic__icon {
-    height: 50px;
-  }
-
-  .plastic__span {
-    margin-top: 20px;
-    font-size: 18px;
-  }
-
-  .plastic__icon__p {
-    font-size: 15px;
-  }
-
+  /* Section2 */
   .plastic__section2 {
     height: 75vh;
   }
@@ -370,6 +316,7 @@
     padding: 0 10px;
   }
 
+  /* Contact */
   .plastic__contact__container {
     width: 50vw;
   }
@@ -384,6 +331,7 @@
 }
 
 @media screen and (max-width: 600px) {
+  /* Section1 */
   .plastic__section1 {
     margin-top: 100px;
     height: 650px;
@@ -397,6 +345,7 @@
     margin: 0;
   }
 
+  /* Section2 */
   .plastic__section2 {
     height: 270vh;
     min-width: 100vw;
@@ -424,6 +373,7 @@
     font-size: 16px;
   }
 
+  /* Contact */
   .plastic__contact__container {
     width: 65vw;
   }
@@ -438,6 +388,7 @@
 }
 
 @media screen and (max-width: 410px) {
+  /* Section1 */
   .plastic__section1 {
     margin-top: 140px;
   }

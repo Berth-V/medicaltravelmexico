@@ -1,9 +1,9 @@
 import './Home.css';
-import HomeSec1 from './HomeSec1/HomeSec1';
-import HomeSec2 from './HomeSec2/HomeSec2';
-import HomeSec3 from './HomeSec3/HomeSec3';
-import HomeSec4 from './HomeSec4/HomeSec4';
-import HomeSec5 from './HomeSec5/HomeSec5';
+import HomeSec1 from './Sections/HomeSec1';
+import HomeSec2 from './Sections/HomeSec2';
+import HomeSec3 from './Sections/HomeSec3';
+import HomeSec4 from './Sections/HomeSec4';
+import HomeSec5 from './Sections/HomeSec5';
 
 function Home() {
   return (

@@ -52,7 +52,11 @@ function TravelBox() {
           >
             <h3 className='destinations__section2__h3'>{city.name}</h3>
             <span
-              className='know__btn'
+              className={
+                city.classname == 'beverly'
+                  ? 'readmore__btn --beverly'
+                  : 'readmore__btn'
+              }
               onClick={() => {
                 clickCityDetector(city.name, city.classname, city.destInfo);
               }}

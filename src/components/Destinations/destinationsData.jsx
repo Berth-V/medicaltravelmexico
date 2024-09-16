@@ -50,7 +50,7 @@ export const citys = [
   },
   {
     name: 'Beverly Hills & Rodeo Drive',
-    classname: 'none',
+    classname: 'beverly',
     img: beverly,
     btnText: 'L.A Include',
     destInfo: 'none',

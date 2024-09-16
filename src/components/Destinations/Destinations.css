@@ -15,6 +15,7 @@
   width: 100vw;
 }
 
+/* FrontPage */
 .destinations__section1 {
   display: flex;
   height: 90vh;
@@ -50,6 +51,7 @@
   width: 80%;
 }
 
+/* TravelBox */
 .destinations__section2 {
   margin-top: 100px;
   height: 100vh;
@@ -88,7 +90,7 @@
   margin-bottom: 50px;
 }
 
-.know__btn {
+.readmore__btn {
   padding: 0 7px;
   background-color: #44d9ee;
   border: 2px solid #44d9ee;
@@ -99,195 +101,24 @@
   transition: 0.3s;
 }
 
-.know__btn:hover {
+.--beverly {
+  pointer-events: none;
+}
+
+.readmore__btn:hover {
   background-color: #fafafa;
   border: 2px solid #44d9ee;
 }
 
-.ensenada__info {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  background-color: rgba(0, 0, 0, 0.9);
+.--beverly:hover {
+  pointer-events: none;
 }
 
-.ensenada__info__container {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 70vw;
-  height: 80vh;
-  background-color: #edfdff;
-  color: #000;
-  overflow-y: scroll;
-}
-
-.ensenada__close__btn {
-  position: absolute;
-  font-size: 25px;
-  top: 20px;
-  right: 50px;
-  color: #edfdff;
-  cursor: pointer;
-}
-
-.ensenada__info__h2 {
-  margin-top: 10px;
-  font-size: 30px;
-  text-align: center;
-}
-
-.ensenada__info__p {
-  font-size: 15px;
-  height: 100%;
-  width: 100%;
-  padding: 0 20px;
-}
-
-.rosarito__info {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
-.rosarito__info__container {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 50vw;
-  height: 80vh;
-  background-color: #edfdff;
-  color: #000;
-  overflow-y: scroll;
-}
-
-.rosarito__close__btn {
-  position: absolute;
-  font-size: 25px;
-  top: 20px;
-  right: 50px;
-  color: #edfdff;
-  cursor: pointer;
-}
-
-.rosarito__info__h2 {
-  margin-top: 10px;
-  font-size: 30px;
-  text-align: center;
-}
-
-.rosarito__info__p {
-  font-size: 15px;
-  height: 100%;
-  width: 100%;
-  padding: 0 20px;
-}
-
-.sandiego__info {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
-.sandiego__info__container {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 50vw;
-  height: 80vh;
-  background-color: #edfdff;
-  color: #000;
-  overflow-y: scroll;
-}
-
-.sandiego__close__btn {
-  position: absolute;
-  font-size: 25px;
-  top: 20px;
-  right: 50px;
-  color: #edfdff;
-  cursor: pointer;
-}
-
-.sandiego__info__h2 {
-  margin-top: 10px;
-  font-size: 30px;
-  text-align: center;
-}
-
-.sandiego__info__p {
-  font-size: 15px;
-  height: 100%;
-  width: 100%;
-  padding: 0 20px;
-}
-
-.tijuana__info {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
-.tijuana__info__container {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 50vw;
-  height: 80vh;
-  background-color: #edfdff;
-  color: #000;
-  overflow-y: scroll;
-}
-
-.tijuana__close__btn {
-  position: absolute;
-  font-size: 25px;
-  top: 20px;
-  right: 50px;
-  color: #edfdff;
-  cursor: pointer;
-}
-
-.tijuana__info__h2 {
-  margin-top: 10px;
-  font-size: 30px;
-  text-align: center;
-}
-
-.tijuana__info__p {
-  font-size: 15px;
-  height: 100%;
-  width: 100%;
-  padding: 0 20px;
-}
-
+/* TravelInfo */
+.ensenada__info,
+.rosarito__info,
+.sandiego__info,
+.tijuana__info,
 .la__info {
   position: fixed;
   display: flex;
@@ -301,17 +132,51 @@
   background-color: rgba(0, 0, 0, 0.9);
 }
 
+.ensenada__info__container,
+.rosarito__info__container,
+.sandiego__info__container,
+.tijuana__info__container,
 .la__info__container {
+  display: flex;
+  padding: 10px 0;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 95vw;
-  height: 85vh;
+  width: 70vw;
+  height: 80vh;
   background-color: #edfdff;
   color: #000;
-  overflow-y: scroll;
 }
 
+.ensenada__info__h2,
+.rosarito__info__h2,
+.sandiego__info__h2,
+.tijuana__info__h2,
+.la__info__h2 {
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+.ensenada__info__p, 
+.rosarito__info__p, 
+.sandiego__info__p, 
+.tijuana__info__p, 
+.la__info__p {
+  width: 60%;
+  height: auto;
+  text-align: center;
+  font-size: 15px;
+  border: 5px solid gray;
+  border-radius: 10px;
+  overflow-y: scroll;
+  padding: 10px 0;
+}
+
+.ensenada__close__btn,
+.rosarito__close__btn,
+.sandiego__close__btn,
+.tijuana__close__btn,
 .la__close__btn {
   position: absolute;
   font-size: 25px;
@@ -321,33 +186,7 @@
   cursor: pointer;
 }
 
-.la__info__h2 {
-  margin-top: 10px;
-  font-size: 30px;
-  text-align: center;
-}
-
-.la__info__text {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-}
-
-.la__info__p {
-  font-size: 15px;
-  height: 100%;
-  width: 40%;
-  padding: 0 20px;
-}
-
-.la__info__p2 {
-  font-size: 15px;
-  height: 100%;
-  width: 40%;
-  padding: 0 20px;
-}
-
+/* Benefits */
 .destinations__section3 {
   display: flex;
   height: 90vh;
@@ -367,7 +206,7 @@
   font-size: 45px;
 }
 
-.destinations__section3__p {
+.destinations__section3__text {
   font-size: 18px;
 }
 
@@ -381,62 +220,7 @@
   width: 100%;
 }
 
-.travel__information {
-  display: flex;
-  height: 80vh;
-  width: 100vw;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100px;
-}
-
-.info__box {
-  display: flex;
-  width: 80%;
-  height: 80%;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.info__item {
-  width: 17vw;
-  height: 23vh;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
-.info__h3 {
-  font-size: 25px;
-}
-
-.info__hr {
-  width: 17vw;
-  margin: 0 auto;
-  background-color: #44d9ee;
-  height: 1px;
-  border-color: #44d9ee;
-}
-
-.info__p {
-  font-size: 17px;
-}
-
-.readmore__btn {
-  margin: 0 auto;
-  padding: 10px;
-  color: #44d9ee;
-  border: 2px solid #44d9ee;
-  border-radius: 20px;
-  transition-duration: 0.3s;
-}
-
-.readmore__btn:hover {
-  background-color: #44d9ee;
-  color: #000;
-}
-
+/* Contact */
 .destinations__contact {
   height: 50vh;
   width: 100vw;
@@ -487,46 +271,27 @@
 }
 
 @media screen and (max-width: 1700px) {
+  /* FrontPage */
   .destinations__section1__description {
     height: 60vh;
     width: 30vw;
     margin-left: 200px;
   }
 
-  .ensenada__info__container {
+  /* TravelInfo */
+  .ensenada__info__container,
+  .rosarito__info__container,
+  .sandiego__info__container,
+  .tijuana__info__container,
+  .la__info__container {
     width: 80vw;
   }
 
-  .ensenada__info__p {
-    font-size: 20px;
-  }
-
-  .rosarito__info__container {
-    width: 80vw;
-  }
-
-  .rosarito__info__p {
-    font-size: 20px;
-  }
-
-  .sandiego__info__container {
-    width: 80vw;
-  }
-
-  .sandiego__info__p {
-    font-size: 20px;
-  }
-
-  .tijuana__info__container {
-    width: 80vw;
-  }
-
-  .tijuana__info__p {
-    font-size: 20px;
-  }
-
-  .la__info__p,
-  .la__info__p2 {
+  .ensenada__info__p, 
+  .rosarito__info__p, 
+  .sandiego__info__p, 
+  .tijuana__info__p, 
+  .la__info__p {
     font-size: 20px;
   }
 }
@@ -536,11 +301,13 @@
     --travel-box-size1: 230%;
   }
 
+  /* FrontPage */
   .destinations__section1__description {
     width: 40vw;
     margin-left: 150px;
   }
 
+  /* Contact */
   .destinations__contact__icon {
     font-size: 33px;
   }
@@ -560,6 +327,7 @@
     --travel-info-size: 140%;
   }
 
+  /* FrontPage */
   .destinations__section1__description {
     margin-left: 100px;
   }
@@ -572,6 +340,7 @@
     font-size: 17px;
   }
 
+  /* TravelBox */
   .destinations__section2 {
     width: 85vw;
   }
@@ -580,10 +349,20 @@
     font-size: 25px;
   }
 
-  .know__btn {
+  .readmore__btn {
     font-size: 12px;
   }
 
+  /* TravelInfo */
+  .ensenada__info__p, 
+  .rosarito__info__p, 
+  .sandiego__info__p, 
+  .tijuana__info__p, 
+  .la__info__p {
+    width: 70%;
+  }
+
+  /* Benefits */
   .destinations__section3__container {
     width: 40vw;
   }
@@ -592,19 +371,7 @@
     width: 50vw;
   }
 
-  .info__box {
-    width: 90vw;
-  }
-
-  .info__item {
-    width: 23vw;
-    height: 30vh;
-  }
-
-  .info__hr {
-    width: 20vw;
-  }
-
+  /* Contact */
   .destinations__contact__icon {
     font-size: 31px;
   }
@@ -631,6 +398,7 @@
     --frontpage-size: 160%;
   }
 
+  /* FrontPage */
   .destinations__section1__description {
     width: 50vw;
     height: 50vh;
@@ -646,6 +414,7 @@
     font-size: 16px;
   }
 
+  /* TravelBox */
   .destinations__section2 {
     width: 95vw;
     height: 75vh;
@@ -653,6 +422,7 @@
     grid-gap: 20px;
   }
 
+  /* TravelInfo */ 
   .ensenada__info__container,
   .rosarito__info__container,
   .sandiego__info__container,
@@ -661,6 +431,15 @@
     width: 95vw;
   }
 
+  .ensenada__info__p, 
+  .rosarito__info__p, 
+  .sandiego__info__p, 
+  .tijuana__info__p, 
+  .la__info__p {
+    width: 85%;
+  }
+
+  /* Benefits */
   .destinations__section3 {
     flex-direction: column;
   }
@@ -675,30 +454,15 @@
     width: 80vw;
   }
 
-  .info__h3 {
-    font-size: 24px;
-  }
-
-  .info__item {
-    width: 25vw;
-  }
-
-  .info__p {
-    font-size: 16px;
-  }
-
-  .readmore__btn {
-    font-size: 16px;
-  }
-
   .destinations__section3__h2 {
     font-size: 42px;
   }
 
-  .destinations__section3__p {
+  .destinations__section3__text {
     font-size: 17px;
   }
 
+  /* Contact */
   .destinations__contact__container {
     width: 50vw;
   }
@@ -720,6 +484,7 @@
     --travel-info-size: 180%;
   }
 
+  /* FrontPage */
   .destinations__section1 {
     height: 70vh;
   }
@@ -739,6 +504,7 @@
     font-size: 14px;
   }
 
+  /* TravelBox */
   .destinations__section2 {
     width: 95vw;
     height: 90vh;
@@ -752,11 +518,22 @@
     padding: 0 3px;
   }
 
-  .know__btn {
+  .readmore__btn {
     font-size: 10px;
     padding: 0 3px;
   }
 
+  /* TravelInfo */
+  .ensenada__info__p, 
+  .rosarito__info__p, 
+  .sandiego__info__p, 
+  .tijuana__info__p, 
+  .la__info__p {
+    width: 90%;
+    font-size: 18px;
+  }
+
+  /* Benefits */
   .destinations__section3 {
     justify-content: space-evenly;
   }
@@ -765,32 +542,12 @@
     font-size: 30px;
   }
 
-  .destinations__section3__p {
+  .destinations__section3__text {
     font-size: 16px;
   }
 
   .deestinations__section3__img__container {
     margin-top: 50px;
-  }
-
-  .info__box {
-    width: 95vw;
-  }
-
-  .info__item {
-    width: 25vw;
-  }
-
-  .info__h3 {
-    font-size: 23px;
-  }
-
-  .info__p {
-    font-size: 13px;
-  }
-
-  .readmore__btn {
-    font-size: 13px;
   }
 }
 
@@ -801,6 +558,7 @@
     --travel-info-size: 350%;
   }
 
+  /* FrontPage */
   .destinations__section1 {
     height: 90vh;
   }
@@ -820,6 +578,7 @@
     font-size: 13px;
   }
 
+  /* TravelBox */
   .destinations__section2 {
     height: 70vh;
     grid-template-rows: repeat(3, 18vh);
@@ -829,13 +588,14 @@
     font-size: 12px;
   }
 
-  .know__btn {
+  .readmore__btn {
     font-size: 8px;
     height: 3vh;
     display: flex;
     align-items: center;
   }
 
+  /* TravelInfo */
   .ensenada__info__p,
   .rosarito__info__p,
   .sandiego__info__p,
@@ -849,6 +609,7 @@
     font-size: 14px;
   }
 
+  /* Benefits */
   .destinations__section3 {
     height: 100vh;
   }
@@ -857,31 +618,11 @@
     font-size: 24px;
   }
 
-  .destinations__section3__p {
+  .destinations__section3__text {
     font-size: 14px;
   }
 
-  .travel__information {
-    height: 100vh;
-  }
-
-  .info__box {
-    height: 90%;
-    flex-direction: column;
-  }
-
-  .info__item {
-    width: 95%;
-  }
-
-  .info__hr {
-    width: 80%;
-  }
-
-  .info__p {
-    font-size: 14px;
-  }
-
+  /* Contact */
   .destinations__contact__container {
     width: 65vw;
   }
@@ -900,6 +641,7 @@
     --travel-info-size: 380%;
   }
 
+  /* FrontPage */
   .destinations__section1 {
     height: 95vh;
   }
@@ -918,6 +660,7 @@
     font-size: 12px;
   }
 
+  /* TravelBox */
   .destinations__section2 {
     height: 100vh;
     grid-template-columns: repeat(2, 1fr);
@@ -935,22 +678,12 @@
     grid-row: unset;
   }
 
+  /* Benefits */
   .destinations__section3 {
     height: 130vh;
   }
 
-  .info__h3 {
-    font-size: 20px;
-  }
-
-  .info__p {
-    font-size: 14px;
-  }
-
-  .readmore__btn {
-    font-size: 12px;
-  }
-
+  /* Contact */
   .destinations__contact__container {
     width: 80vw;
   }
@@ -960,6 +693,8 @@
   :root {
     --frontpage-size: 350%;
   }
+
+  /* FrontPage */
   .destinations__section1__description {
     width: 65vw;
     height: 70vh;
@@ -971,11 +706,13 @@
     font-size: 20px;
   }
 
-  .know__btn {
+  /* TravelBox */
+  .readmore__btn {
     font-size: 10px;
     height: 5vh;
   }
 
+  /* Benefits */
   .destinations__section3 {
     height: 140vh;
     justify-content: space-between;
@@ -990,7 +727,7 @@
     width: 100%;
   }
 
-  .destinations__section3__p {
+  .destinations__section3__text {
     font-size: 12px;
     width: 100%;
   }
@@ -998,17 +735,5 @@
   .deestinations__section3__img__container {
     height: 60vh;
     width: 90vw;
-  }
-
-  .info__h3 {
-    font-size: 18px;
-  }
-
-  .info__p {
-    font-size: 12px;
-  }
-
-  .readmore__btn {
-    font-size: 11px;
   }
 }

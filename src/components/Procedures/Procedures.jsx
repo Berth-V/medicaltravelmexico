@@ -20,7 +20,7 @@ function Procedures() {
       <h2 className='procedures__tittle'>Choose your Doctor</h2>
       <motion.div
         className='cards__container'
-        // Framer Motion Attributtes //
+        // Framer Motion Attributes //
         variants={cardAnimation}
         initial='start'
         animate='end'
@@ -29,11 +29,18 @@ function Procedures() {
           <NavLink className='card__link' to={dr.navTo} key={index}>
             <motion.div
               className='card'
-              // Framer Motion Attributtes //
+              // Framer Motion Attributes //
               variants={cardAnimation}
               whileHover={{scale: 1.02}}
             >
-              <img className='card__img' src={dr.imgSrc} />
+              <img
+                className={
+                  dr.tittle == 'Plastic Surgery'
+                    ? 'card__img--bata'
+                    : 'card__img'
+                }
+                src={dr.imgSrc}
+              />
               <h3 className='speciality__tittle'>{dr.tittle}</h3>
               <span className='doctor__name'>{dr.drName}</span>
               <p className='card__p'>{dr.description}</p>

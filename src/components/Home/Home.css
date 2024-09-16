@@ -11,6 +11,7 @@
   flex-direction: column;
 }
 
+/* HomeSec1 */
 .home__section1 {
   height: 100vh;
   width: 100vw;
@@ -19,7 +20,7 @@
   justify-content: flex-end;
 }
 
-.home__textBox {
+.section1__textBox {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -30,20 +31,20 @@
   margin-top: 50px;
 }
 
-.home__h1 {
+.section1__h1 {
   font-size: 40px;
   margin-top: -50px;
   color: #525252;
   text-align: center;
 }
 
-.home__p {
+.section1__p {
   font-size: 28px;
   color: #525252;
   text-align: center;
 }
 
-.home__icon__box {
+.section1__icon_container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -53,15 +54,8 @@
   z-index: 11;
 }
 
-.home__icon__link {
+.section1__link {
   color: #525252;
-}
-
-.home__icon__link:hover {
-  color: #44d9ee;
-}
-
-.home__icon__container {
   height: auto;
   display: flex;
   flex-direction: column;
@@ -70,16 +64,21 @@
   transition: 0.3s;
 }
 
-.home__icon {
+.section1__link:hover {
+  color: #44d9ee;
+}
+
+.section1__icon {
   font-size: 45px;
   margin-bottom: 7px;
 }
 
-.home__icon__span {
+.section1__icon__span {
   font-size: 18px;
   font-weight: 600;
 }
 
+/* HomeSec2 */
 .home__section2 {
   height: 100vh;
   width: 100vw;
@@ -89,7 +88,7 @@
   text-align: center;
 }
 
-.box {
+.section2__cards__box {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 25px;
@@ -100,7 +99,7 @@
   grid-auto-rows: auto;
 }
 
-.item {
+.section2__card {
   border: 1px solid #44d9ee;
   height: 100%;
   display: flex;
@@ -111,24 +110,20 @@
   position: relative;
 }
 
-.box__link {
-  height: 100%;
-}
-
-.box__icon {
+.section2__icon {
   height: 100px;
   position: absolute;
   top: -75px;
   left: 20px;
 }
 
-.box__h3 {
+.section2__h3 {
   font-size: 22px;
   margin-top: 5vh;
   color: #fafafa;
 }
 
-.box__parraph {
+.section2__parraph {
   font-size: 19px;
   height: 100%;
   display: flex;
@@ -137,6 +132,7 @@
   color: #fafafa;
 }
 
+/* HomeSec3 */ 
 .home__section3 {
   width: 100vw;
   height: 80vh;
@@ -160,7 +156,7 @@
   text-align: center;
 }
 
-.section3__p {
+.section3__text {
   width: 30vw;
   font-size: 20px;
   text-align: center;
@@ -179,7 +175,8 @@
   height: 100%;
 }
 
-.home__section4 {
+/* HomeSec4 */
+.section4 {
   height: calc(100vh - 60px);
   width: 100vw;
   display: flex;
@@ -195,7 +192,7 @@
   top: 10vh;
 }
 
-.home__section4__container {
+.section4__container {
   margin-top: 150px;
   height: 55vh;
   width: 100vw;
@@ -204,7 +201,7 @@
   align-items: center;
 }
 
-.home__section4__items {
+.section4__pic {
   height: 80%;
   width: 380px;
   background-color: #fafafa;
@@ -213,14 +210,14 @@
   border: 3px solid #a1a1a1;
 }
 
-.home__section4__img,
-.home__section4__text {
+.section4__img,
+.section4__text {
   height: 250px;
   width: 350px;
   margin-top: 20px;
 }
 
-.home__section4__p {
+.section4__p {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -232,6 +229,7 @@
   border: 3px solid #005797;
 }
 
+/* HomeSec5 */
 .home__section5 {
   height: 70vh;
   display: flex;
@@ -264,7 +262,7 @@
   font-size: 50px;
 }
 
-.section5__p {
+.section5__text {
   font-size: 19px;
   width: 30vw;
 }
@@ -274,31 +272,33 @@
     --home-frontpage-size: 70%;
   }
 
-  .home__textBox {
+  /* HomeSec1 */
+  .section1__textBox {
     margin-right: 130px;
   }
 
-  .home__h1 {
+  .section1__h1 {
     font-size: 38px;
   }
 
-  .home__p {
+  .section1__p {
     font-size: 26px;
   }
 
-  .home__icon {
+  .section1__icon {
     font-size: 43px;
   }
 
-  .home__icon__span {
+  .section1__icon__span {
     font-size: 17px;
   }
 
-  /*Section2*/
-  .box {
+  /* HomeSec2 */
+  .section2__cards__box {
     width: 90vw;
   }
 
+  /* HomeSec5 */
   .section5__container {
     height: 50vh;
   }
@@ -313,51 +313,53 @@
     --home-frontpage-size: 67%;
   }
 
-  .home__textBox {
+  .section1__textBox {
     width: 42vw;
     margin-right: 110px;
   }
 
-  .home__h1 {
+  .section1__h1 {
     font-size: 35px;
   }
 
-  .home__p {
+  .section1__p {
     font-size: 22px;
   }
 
-  .home__icon {
+  .section1__icon {
     font-size: 39px;
   }
 
-  .home__icon__span {
+  .section1__icon__span {
     font-size: 15px;
   }
 
-  .box {
+  /* HomeSec2 */
+  .section2__cards__box {
     grid-gap: 15px;
     height: 50vh;
     width: 100vw;
   }
 
-  .box__icon {
+  .section2__icon {
     height: 90px;
     top: -70px;
   }
 
-  .box__h3 {
+  .section2__h3 {
     font-size: 20px;
   }
 
-  .box__parraph {
+  .section2__parraph {
     font-size: 17px;
   }
 
+  /* HomeSec3 */
   .section3__h2 {
     font-size: 40px;
   }
 
-  .section3__p {
+  .section3__text {
     font-size: 17px;
   }
 
@@ -365,14 +367,7 @@
     height: 500px;
   }
 
-  .banner {
-    width: 70vw;
-  }
-
-  .travel__p {
-    font-size: 18px;
-  }
-
+  /* HomeSec5 */
   .section5__container {
     width: 45vw;
   }
@@ -381,71 +376,75 @@
     font-size: 40px;
   }
 
-  .section5__p {
+  .section5__text {
     font-size: 17px;
     width: 35vw;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .home__textBox {
+  /* HomeSec1 */
+  .section1__textBox {
     width: 45vw;
     margin-right: 80px;
   }
 
-  .home__h1 {
+  .section1__h1 {
     font-size: 33px;
   }
 
-  .home__p {
+  .section1__p {
     font-size: 20px;
   }
 
-  .home__icon {
+  .section1__icon {
     font-size: 37px;
   }
 
-  .home__icon__span {
+  .section1__icon__span {
     font-size: 13px;
   }
 
-  .box__icon {
+  .section2__icon {
     height: 80px;
     top: -65px;
   }
 
-  .box__h3 {
+  .section2__h3 {
     font-size: 17px;
   }
 
-  .box__parraph {
+  .section2__parraph {
     font-size: 15px;
   }
 
+  /* HomeSec3 */
   .section3__h2 {
     font-size: 38px;
   }
 
-  .section3__p {
+  .section3__text {
     font-size: 15px;
   }
 
-  .home__section4__items {
+  /* HomeSec4 */
+  .section4__pic {
     height: 70%;
     width: 300px;
   }
 
-  .home__section4__img,
-  .home__section4__text {
+  .section4__img,
+  .section4__text {
     height: 180px;
     width: 280px;
     margin-top: 20px;
   }
 
-  .home__section4__p {
+  .section4__p {
     font-size: 19px;
   }
 
+  /* HomeSec5 */
   .section5__container {
     width: 53vw;
   }
@@ -454,7 +453,7 @@
     font-size: 35px;
   }
 
-  .section5__p {
+  .section5__text {
     font-size: 15px;
     width: 40vw;
   }
@@ -465,49 +464,52 @@
     --home-frontpage-size: 70%;
   }
 
-  .home__textBox {
+  /* HomeSec1 */
+  .section1__textBox {
     margin-right: 50px;
   }
 
-  .home__h1 {
+  .section1__h1 {
     font-size: 31px;
   }
 
-  .home__p {
+  .section1__p {
     font-size: 18px;
   }
 
-  .home__icon {
+  .section1__icon {
     font-size: 35px;
   }
 
-  .home__icon__span {
+  .section1__icon__span {
     font-size: 11px;
   }
 
-  .box {
+  /* HomeSec2 */
+  .section2__cards__box {
     grid-gap: unset;
   }
 
-  .item {
+  .section2__card {
     height: 43vh;
   }
 
-  .box__icon {
+  .section2__icon {
     height: 60px;
     top: -45px;
     left: 5px;
   }
 
-  .box__h3 {
+  .section2__h3 {
     font-size: 15px;
     margin-top: 3vh;
   }
 
-  .box__parraph {
+  .section2__parraph {
     font-size: 11px;
   }
 
+  /* HomeSec3 */
   .home__section3 {
     height: 100vh;
     justify-content: space-evenly;
@@ -517,7 +519,7 @@
     font-size: 36px;
   }
 
-  .section3__p {
+  .section3__text {
     font-size: 13px;
     width: 100%;
   }
@@ -530,27 +532,29 @@
     height: 60vh;
   }
 
+  /* HomeSec4 */
   .airplane {
     width: 95vw;
     top: 13vh;
   }
 
-  .home__section4__items {
+  .section4__pic {
     height: 65%;
     width: 230px;
   }
 
-  .home__section4__img,
-  .home__section4__text {
+  .section4__img,
+  .section4__text {
     height: 140px;
     width: 210px;
     margin-top: 15px;
   }
 
-  .home__section4__p {
+  .section4__p {
     font-size: 15px;
   }
 
+  /* HomeSec5 */
   .section5__background {
     height: 95%;
     width: 95%;
@@ -560,7 +564,7 @@
     width: 65vw;
   }
 
-  .section5__p {
+  .section5__text {
     width: 55vw;
   }
 }
@@ -571,51 +575,54 @@
     --section4-background-size: 150%;
   }
 
-  .home__textBox {
+  /* HomeSec1 */
+  .section1__textBox {
     margin-right: 20px;
     width: 48vw;
   }
 
-  .home__h1 {
+  .section1__h1 {
     font-size: 29px;
   }
 
-  .home__p {
+  .section1__p {
     font-size: 16px;
   }
 
-  .home__icon__box {
+  .section1__icon_container {
     width: 100%;
   }
 
-  .home__icon {
+  .section1__icon {
     font-size: 29px;
   }
 
-  .home__icon__span {
+  .section1__icon__span {
     font-size: 9px;
   }
 
-  .item {
+  /* HomeSec2 */
+  .section2__card {
     height: 36vh;
     margin: 3px;
   }
 
-  .box__h3 {
+  .section2__h3 {
     font-size: 13px;
     margin-top: 3vh;
   }
 
-  .box__parraph {
+  .section2__parraph {
     font-size: 9px;
   }
 
+  /* HomeSec3 */
   .section3__h2 {
     font-size: 36px;
     text-align: center;
   }
 
-  .section3__p {
+  .section3__text {
     font-size: 12px;
     width: 100%;
   }
@@ -629,7 +636,8 @@
     height: 50vh;
   }
 
-  .home__section4 {
+  /* HomeSec4 */
+  .section4 {
     height: 1200px;
     width: 100vw;
   }
@@ -640,7 +648,7 @@
     height: 15vh;
   }
 
-  .home__section4__container {
+  .section4__container {
     margin-top: 120px;
     height: 1000px;
     display: flex;
@@ -649,22 +657,23 @@
     align-items: center;
   }
 
-  .home__section4__items {
+  .section4__pic {
     height: 320px;
     width: 300px;
   }
 
-  .home__section4__img,
-  .home__section4__text {
+  .section4__img,
+  .section4__text {
     height: 180px;
     width: 280px;
     margin-top: 15px;
   }
 
-  .home__section4__p {
+  .section4__p {
     font-size: 15px;
   }
 
+  /* HomeSec5 */
   .section5__background {
     height: 100%;
     width: 100%;
@@ -679,7 +688,7 @@
     font-size: 34px;
   }
 
-  .section5__p {
+  .section5__text {
     width: 100%;
     padding: 0 20px;
   }
@@ -691,53 +700,56 @@
     --home--backfround-pos: 3vw 7vh;
   }
 
+  /* HomeSec1 */
   .home__section1 {
     background: none;
     justify-content: center;
     align-items: flex-end;
   }
 
-  .home__textBox {
+  .section1__textBox {
     margin-bottom: 40px;
     margin-right: 0;
     width: 95vw;
     height: 40vh;
   }
 
-  .home__h1 {
+  .section1__h1 {
     margin: 0;
     font-size: 28px;
   }
 
-  .home__p {
+  .section1__p {
     font-size: 15px;
   }
 
-  .home__icon {
+  .section1__icon {
     font-size: 29px;
   }
 
-  .box {
+  /* HomeSec2 */
+  .section2__cards__box {
     height: 85vh;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: repeat(2, 40vh);
     justify-content: center;
   }
 
-  .item {
+  .section2__card {
     height: 83%;
     width: 95%;
     margin: 0 auto;
   }
 
-  .box__h3 {
+  .section2__h3 {
     font-size: 15px;
   }
 
-  .box__parraph {
+  .section2__parraph {
     font-size: 11px;
   }
 
+  /* HomeSec3 */
   .home__section3 {
     height: 95vh;
     flex-direction: column;
@@ -752,7 +764,7 @@
     font-size: 35px;
   }
 
-  .section3__p {
+  .section3__text {
     font-size: 13px;
     padding: 10px;
   }
@@ -768,21 +780,23 @@
     width: 55%;
   }
 
+  /* HomeSec4 */
   .airplane {
     width: 100vw;
     height: 12vh;
     top: 0;
   }
 
-  .home__section4__container {
+  .section4__container {
     margin-top: 50px;
   }
 
+  /* HomeSec5 */
   .section5__h2 {
     font-size: 30px;
   }
 
-  .section5__p {
+  .section5__text {
     font-size: 14px;
   }
 }
@@ -793,18 +807,21 @@
     --section4-background-size: 220%;
   }
 
-  .home__textBox {
+  /* HomeSec1 */
+  .section1__textBox {
     height: 45vh;
   }
 
-  .box {
+  .section2__cards__box {
     height: 95vh;
   }
 
-  .item {
+  /* HomeSec2 */
+  .section2__card {
     height: 83%;
   }
 
+  /* HomeSec3 */
   .section3__img {
     height: 45vh;
     width: 50%;
@@ -814,28 +831,14 @@
     height: 110vh;
   }
 
+  /* HomeSec4 */
   .airplane {
     top: 45px;
     height: 10vh;
     width: 95vw;
   }
 
-  .banner {
-    margin-top: 10vh;
-  }
-
-  .travelimg1 {
-    width: 45vw;
-  }
-
-  .travel__p {
-    width: 45vw;
-  }
-
-  .travelimg2 {
-    width: 45vw;
-  }
-
+  /* HomeSec5 */
   .section5__container {
     height: 60%;
   }
@@ -847,11 +850,12 @@
 }
 
 @media screen and (max-width: 350px) {
-  .box__h3 {
+  /* HomeSec2 */
+  .section2__h3 {
     font-size: 14px;
   }
 
-  .box__parraph {
+  .section2__parraph {
     font-size: 10px;
   }
 }

@@ -7,6 +7,7 @@
   align-items: center;
 }
 
+/* Section1 */
 .oto__section1 {
   height: 100vh;
   width: 100vw;
@@ -42,6 +43,7 @@
   padding: 0 10px;
 }
 
+/* Section2 */
 .oto__section2 {
   width: 100vw;
   height: 100vh;
@@ -96,6 +98,7 @@
   color: #5e5e5e;
 }
 
+/* Section3 */
 .oto__section3 {
   height: 120vh;
   width: 100vw;
@@ -146,6 +149,7 @@
   align-items: center;
 }
 
+/* Contact */
 .oto__contact {
   height: 50vh;
   width: 100vw;
@@ -196,6 +200,7 @@
 }
 
 @media screen and (max-width: 1700px) {
+  /* Section2 */
   .oto__section2 {
     height: 110vh;
   }
@@ -217,6 +222,7 @@
     font-size: 19px;
   }
 
+  /* Section3 */
   .oto__approaches__p {
     font-size: 19px;
     padding: 0 10px;
@@ -224,6 +230,7 @@
 }
 
 @media screen and (max-width: 1500px) {
+  /* Section1 */
   .oto__img {
     width: 340px;
   }
@@ -240,6 +247,7 @@
     font-size: 18px;
   }
 
+  /* Section2 */
   .oto__span {
     font-size: 22px;
   }
@@ -248,6 +256,7 @@
     font-size: 18px;
   }
 
+  /* Section3 */
   .oto__approaches__tittle {
     font-size: 25px;
   }
@@ -256,6 +265,7 @@
     font-size: 17px;
   }
 
+  /* Contact */
   .oto__contact__icon {
     font-size: 33px;
   }
@@ -270,6 +280,7 @@
 }
 
 @media screen and (max-width: 1200px) {
+  /* Section1 */
   .oto__card {
     width: 95vw;
   }
@@ -290,6 +301,7 @@
     font-size: 16px;
   }
 
+  /* Section2 */
   .oto__icon__box {
     width: 95vw;
   }
@@ -310,10 +322,12 @@
     font-size: 18px;
   }
 
+  /* Section3 */
   .oto__approaches__tittle {
     font-size: 23px;
   }
 
+  /* Contact */
   .oto__contact__icon {
     font-size: 31px;
   }
@@ -328,6 +342,7 @@
 }
 
 @media screen and (max-width: 900px) {
+  /* Section1 */
   .oto__img {
     height: 330px;
   }
@@ -344,6 +359,7 @@
     font-size: 15px;
   }
 
+  /* Section2 */
   .oto__section2 {
     height: 1100px;
   }
@@ -365,6 +381,7 @@
     font-size: 16px;
   }
 
+  /* Section3 */
   .oto__section3 {
     height: 90vh;
   }
@@ -385,11 +402,17 @@
 }
 
 @media screen and (max-width: 800px) {
+  /* Section1 */
   .oto__card {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     height: 70vh;
+  }
+
+  .oto__img {
+    width: 360px;
+    margin-right: 0;
   }
 
   .oto__doctor__name {
@@ -400,11 +423,7 @@
     margin-bottom: 10px;
   }
 
-  .oto__img {
-    width: 360px;
-    margin-right: 0;
-  }
-
+  /* Section2 */
   .oto__icon {
     height: 50px;
   }
@@ -418,6 +437,7 @@
     font-size: 15px;
   }
 
+  /* Section3 */
   .oto__section3 {
     height: 75vh;
   }
@@ -436,6 +456,7 @@
     padding: 0 3px;
   }
 
+  /* Contact */
   .oto__contact__container {
     width: 50vw;
   }
@@ -450,6 +471,7 @@
 }
 
 @media screen and (max-width: 600px) {
+  /* Section1 */
   .oto__section1 {
     margin-top: 100px;
     height: 650px;
@@ -463,6 +485,7 @@
     margin: 0;
   }
 
+  /* Section2 */
   .oto__section2 {
     height: 1500px;
     margin-top: 70px;
@@ -483,6 +506,7 @@
     margin-top: 5px;
   }
 
+  /* Section3 */
   .oto__section3 {
     height: 270vh;
     min-width: 100vw;
@@ -510,6 +534,7 @@
     font-size: 16px;
   }
 
+  /* Contact */
   .oto__contact__container {
     width: 65vw;
   }
@@ -524,6 +549,7 @@
 }
 
 @media screen and (max-width: 410px) {
+  /* Section1 */
   .oto__section1 {
     margin-top: 140px;
   }
@@ -533,10 +559,7 @@
     width: 300px;
   }
 
-  .oto__item {
-    height: 15%;
-  }
-
+  /* Section2 */
   .oto__section2 {
     height: 1800px;
     margin-top: 70px;
@@ -545,14 +568,20 @@
     align-items: center;
   }
 
-  .oto__approaches__p {
-    padding: 0 5px;
-  }
-
   .oto__icon__box {
     height: 1700px;
   }
 
+  .oto__item {
+    height: 15%;
+  }
+
+  /* Section3 */
+  .oto__approaches__p {
+    padding: 0 5px;
+  }
+
+  /* Contact */
   .oto__contact__container {
     width: 80vw;
   }
