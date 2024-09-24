@@ -19,7 +19,7 @@
 .oto__card {
   max-width: 1150px;
   height: auto;
-  border-bottom: 2px solid #44d9ee;
+  border-bottom: 2px solid var(--secondary-color);
 }
 
 .oto__img {
@@ -30,12 +30,12 @@
 
 .oto__procedure {
   font-size: 30px;
-  text-decoration: underline #44d9ee;
+  text-decoration: underline var(--secondary-color);
   text-align: center;
 }
 
 .oto__name {
-  text-decoration: underline #44d9ee;
+  text-decoration: underline var(--secondary-color);
 }
 
 .oto__description {
@@ -47,11 +47,10 @@
 .oto__section2 {
   width: 100vw;
   height: 100vh;
-  background-color: #84dfec;
+  background-color: var(--fourth-color);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
 }
 
 .oto__icon__box {
@@ -72,13 +71,13 @@
 }
 
 .oto__icon {
-  color: #005989;
+  color: var(--fith-color);
   width: 60px;
   margin-bottom: 10px;
 }
 
 .oto__span {
-  color: #5e5e5e;
+  color: var(--sixth-color);
   font-size: 24px;
   margin-top: 10px;
 }
@@ -95,7 +94,7 @@
   display: inline;
   font-size: 20px;
   text-align: center;
-  color: #5e5e5e;
+  color: var(--sixth-color);
 }
 
 /* Section3 */
@@ -125,12 +124,12 @@
 
 .oto__approaches__item:nth-child(2),
 .oto__approaches__item:nth-child(8) {
-  color: #fafafa;
+  color: var(--white-color);
 }
 
 .oto__approaches__item:nth-child(5) {
-  background-color: #84dfec;
-  color: #5e5e5e;
+  background-color: var(--fourth-color);
+  color: var(--primary-color);
 }
 
 .oto__approaches__img {
@@ -157,14 +156,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #44d9ee;
+  background-color: var(--secondary-color);
 }
 
 .oto__contact__h2 {
-  color: #000000;
+  color: var(--primary-color);
   font-size: 45px;
   margin-bottom: 10vh;
-  text-decoration: underline 3px solid #005989;
+  text-decoration: underline 3px solid var(--fith-color);
 }
 
 .oto__contact__container {
@@ -172,7 +171,7 @@
   justify-content: space-evenly;
   height: auto;
   width: 35vw;
-  border: 2px solid #005989;
+  border: 2px solid var(--fith-color);
   border-radius: 15px;
 }
 
@@ -182,12 +181,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #000000;
+  color: var(--primary-color);
   transition-duration: 0.2s;
 }
 
 .oto__contact__item:hover {
-  color: #fafafa;
+  color: var(--white-color);
 }
 
 .oto__contact__icon {

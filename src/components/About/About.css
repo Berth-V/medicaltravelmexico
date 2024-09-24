@@ -20,7 +20,7 @@
 
 .about__h1 {
   text-align: center;
-  text-decoration: 3px underline #44d9ee;
+  text-decoration: 3px underline var(--secondary-color);
 }
 
 .about__p {
@@ -43,7 +43,7 @@
   align-items: center;
   width: 30vw;
   height: 50vh;
-  border: 2px solid #44d9ee;
+  border: 2px solid var(--secondary-color);
   border-radius: 15px;
 }
 

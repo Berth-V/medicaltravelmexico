@@ -1,9 +1,9 @@
-import rhinoplasty from '/rhinoplasty.png';
-import septoplasty from '/septoplasty.png';
-import bichectomy from '/bichectomy.png';
-import blepharoplasty from '/blepharoplasty.png';
-import otoplasty from '/otoplasty.png';
-import tonsillectomy from '/tonsillectomy.png';
+import rhinoplasty from '/rhinoplasty.avif';
+import septoplasty from '/septoplasty.avif';
+import bichectomy from '/bichectomy.avif';
+import blepharoplasty from '/blepharoplasty.avif';
+import otoplasty from '/otoplasty.avif';
+import tonsillectomy from '/tonsillectomy.avif';
 import {motion} from 'framer-motion';
 
 function OtoSec2() {
@@ -19,7 +19,7 @@ function OtoSec2() {
         // Framer Motion Attributes //
         variants={iconBoxAnimation}
         initial='start'
-        whileInView='start'
+        whileInView='end'
         viewport={{once: true}}
       >
         <div className='oto__item'>

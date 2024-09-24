@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
+:root {
+  --primary-color: #262626;
+  --secondary-color: #54eaff;
+  --thrid-color: #d6d6d6;
+  --fourth-color: #84dfec;
+  --fith-color: #005989;
+  --sixth-color: #5e5e5e;
+  --white-color: #fafafa;
+  --black-color: #000;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +19,7 @@
 }
 
 body {
-  background-color: #262626;
+  background-color: var(--primary-color);
   display: flex;
   flex-direction: column;
   overflow-x: hidden;

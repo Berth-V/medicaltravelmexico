@@ -42,7 +42,7 @@ function Section2() {
             Non-Surgical Rejuvenation Procedures
           </h2>
           <p className='plastic__approaches__p'>
-            Dermal fillers (such as hyaluronic acid), Laser facial rejuvenation
+            Dermal fillers such as hyaluronic acid, Laser facial rejuvenation
             treatments, Chemical peels
           </p>
         </div>

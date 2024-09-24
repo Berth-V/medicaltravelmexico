@@ -1,4 +1,4 @@
-import portada from '/portada.avif';
+import homeFrontPage from '/homefrontpage.avif';
 import {frontPageAnimations} from '../framerMotionVariants';
 import {IoLogoWhatsapp, IoIosMail} from 'react-icons/io';
 import {AiFillInstagram} from 'react-icons/ai';
@@ -9,7 +9,7 @@ function HomeSec1() {
     <section
       className='home__section1'
       style={{
-        background: `url(${portada}) no-repeat var(--home--backfround-pos)/var(--home-frontpage-size) #FCFCFC`,
+        background: `url(${homeFrontPage}) no-repeat var(--home--backfround-pos)/var(--home-frontpage-size) #FCFCFC`,
       }}
     >
       <motion.div

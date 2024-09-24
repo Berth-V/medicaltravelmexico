@@ -1,6 +1,6 @@
 import './Header.css';
 import {useState} from 'react';
-import logo from '/transparent logo2.png';
+import logo from '/medical logo.avif';
 import {NavLink} from 'react-router-dom';
 import {motion} from 'framer-motion';
 import {FaBars} from 'react-icons/fa';

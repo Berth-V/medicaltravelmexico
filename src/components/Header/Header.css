@@ -9,7 +9,7 @@
   height: 65px;
   width: 100vw;
   position: fixed;
-  background-color: #262626;
+  background-color: var(--primary-color);
   z-index: 100;
 }
 
@@ -60,7 +60,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  color: var(--thrid-color);
+  color: var(--secondary-color);
   height: 100%;
 }
 
@@ -75,12 +75,12 @@
 
 .nav__span {
   font-size: 18px;
-  color: #fcfcfc;
+  color: var(--white-color);
   transition-duration: 0.3s;
 }
 
 .nav__span:hover {
-  color: #44d9ee;
+  color: var(--secondary-color);
 }
 
 .procedures__extension {
@@ -88,7 +88,7 @@
   position: absolute;
   z-index: 1;
   height: auto;
-  background-color: #262626;
+  background-color: var(--primary-color);
   margin-left: -25px;
 }
 
@@ -144,7 +144,7 @@
     left: 10px;
     top: 7px;
     font-size: 25px;
-    color: #44d9ee;
+    color: var(--third-color);
     z-index: 100;
   }
 
@@ -159,7 +159,7 @@
     width: 100vw;
     position: fixed;
     top: 0;
-    background-color: #262626;
+    background-color: var(--primary-color);
     flex-direction: column;
     z-index: 99;
   }
@@ -170,6 +170,6 @@
 
   .nav__span2 {
     font-size: 15px;
-    color: #fafafa;
+    color: var(--white-color);
   }
 }

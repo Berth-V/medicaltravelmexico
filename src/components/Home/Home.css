@@ -34,13 +34,13 @@
 .section1__h1 {
   font-size: 40px;
   margin-top: -50px;
-  color: #525252;
+  color: var(--primary-color);
   text-align: center;
 }
 
 .section1__p {
   font-size: 28px;
-  color: #525252;
+  color: var(--primary-color);
   text-align: center;
 }
 
@@ -55,7 +55,7 @@
 }
 
 .section1__link {
-  color: #525252;
+  color: var(--sixth-color);
   height: auto;
   display: flex;
   flex-direction: column;
@@ -65,7 +65,7 @@
 }
 
 .section1__link:hover {
-  color: #44d9ee;
+  color: var(--secondary-color);
 }
 
 .section1__icon {
@@ -100,7 +100,7 @@
 }
 
 .section2__card {
-  border: 1px solid #44d9ee;
+  border: 1px solid var(--secondary-color);
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -120,7 +120,7 @@
 .section2__h3 {
   font-size: 22px;
   margin-top: 5vh;
-  color: #fafafa;
+  color: var(--white-color);
 }
 
 .section2__parraph {
@@ -129,7 +129,7 @@
   display: flex;
   align-items: center;
   padding: 0 10px;
-  color: #fafafa;
+  color: var(--white-color);
 }
 
 /* HomeSec3 */ 
@@ -152,7 +152,7 @@
 
 .section3__h2 {
   font-size: 50px;
-  text-decoration: underline 4px dashed #44d9ee;
+  text-decoration: underline 4px dashed var(--secondary-color);
   text-align: center;
 }
 
@@ -165,9 +165,9 @@
 .section3__hr {
   height: 90%;
   width: 4px;
-  color: #44d9ee;
-  background-color: #44d9ee;
-  border: 1px solid #44d9ee;
+  color: var(--secondary-color);
+  background-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
   margin: 0 50px;
 }
 
@@ -204,10 +204,10 @@
 .section4__pic {
   height: 80%;
   width: 380px;
-  background-color: #fafafa;
+  background-color: var(--white-color);
   display: flex;
   justify-content: center;
-  border: 3px solid #a1a1a1;
+  border: 3px solid var(--sixth-color);
 }
 
 .section4__img,
@@ -224,9 +224,9 @@
   height: 100%;
   width: 100%;
   background-color: rgba(68, 217, 238, 0.9);
+  border: 3px solid var(--fith-color);
   font-size: 20px;
   padding: 10px;
-  border: 3px solid #005797;
 }
 
 /* HomeSec5 */
@@ -255,7 +255,7 @@
   justify-content: space-evenly;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
-  border: 3px solid #44d9ee;
+  border: 3px solid var(--secondary-color);
 }
 
 .section5__h2 {

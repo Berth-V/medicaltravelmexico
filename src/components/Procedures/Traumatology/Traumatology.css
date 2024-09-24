@@ -11,6 +11,7 @@
   align-items: center;
 }
 
+/* Section 1 */
 .trauma__section1 {
   height: 100vh;
   width: 100vw;
@@ -22,7 +23,7 @@
 .trauma__card {
   max-width: 1150px;
   height: auto;
-  border-bottom: 2px solid #44d9ee;
+  border-bottom: 2px solid var(--secondary-color);
 }
 
 .trauma__img {
@@ -33,12 +34,12 @@
 
 .trauma__procedure {
   font-size: 30px;
-  text-decoration: underline #44d9ee;
+  text-decoration: underline var(--secondary-color);
   text-align: center;
 }
 
 .trauma__name {
-  text-decoration: underline #44d9ee;
+  text-decoration: underline var(--secondary-color);
 }
 
 .trauma__description {
@@ -46,22 +47,22 @@
   padding: 0 10px;
 }
 
+/* Section 2 */
 .trauma__section2 {
   width: 100vw;
   height: 55vh;
-  background-color: #84dfec;
+  background-color: var(--fourth-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
   text-align: center;
 }
 
 .trauma__icon__box {
   display: flex;
   width: 1300px;
-  height: 90%;
+  height: 80%;
   justify-content: space-evenly;
 }
 
@@ -74,13 +75,13 @@
 }
 
 .trauma__icon {
-  color: #005989;
+  color: var(--fith-color);
   font-size: 45px;
   margin-bottom: 30px;
 }
 
 .trauma__span {
-  color: #5e5e5e;
+  color: var(--sixth-color);
   font-size: 24px;
 }
 
@@ -96,18 +97,19 @@
   display: inline;
   font-size: 20px;
   text-align: center;
-  color: #5e5e5e;
+  color: var(--sixth-color);
 }
 
 .trauma__section2__btn {
-  background-color: #005989;
-  color: #fafafa;
+  background-color: var(--fith-color);
+  color: var(--white-color);
   padding: 10px;
   font-size: 20px;
   margin-bottom: 15px;
   border-radius: 15px;
 }
 
+/* Section 3 */
 .trauma__section3 {
   height: 120vh;
   min-width: 80vw;
@@ -134,12 +136,12 @@
 
 .trauma__approaches__item:nth-child(2),
 .trauma__approaches__item:nth-child(8) {
-  color: #fafafa;
+  color: var(--white-color);
 }
 
 .trauma__approaches__item:nth-child(5) {
-  background-color: #84dfec;
-  color: #5e5e5e;
+  background-color: var(--fourth-color);
+  color: var(--primary-color);
 }
 
 .trauma__approaches__img {
@@ -158,6 +160,7 @@
   align-items: center;
 }
 
+/* Section 4 */
 .trauma__section4 {
   display: flex;
   flex-direction: column;
@@ -165,8 +168,8 @@
   align-items: center;
   height: 80vh;
   width: 100vw;
-  background-color: #84dfec;
-  color: #262626;
+  background-color: var(--fourth-color);
+  color: var(--primary-color);
   overflow-x: hidden;
 }
 
@@ -174,7 +177,7 @@
   font-size: 45px;
   text-align: center;
   width: 100%;
-  background-color: #84dfec;
+  background-color: var(--fourth-color);
 }
 
 .trauma__other__p {
@@ -186,9 +189,10 @@
   padding: 15px;
   text-align: center;
   background-color: rgba(132, 223, 236, 0.8);
-  color: #000;
+  color: var(--black-color);
 }
 
+/* Contact */
 .trauma__contact {
   height: 50vh;
   width: 100vw;
@@ -201,7 +205,7 @@
 .trauma__contact__h2 {
   font-size: 45px;
   margin-bottom: 10vh;
-  text-decoration: underline 3px solid #44d9ee;
+  text-decoration: underline 3px solid var(--secondary-color);
 }
 
 .trauma__contact__container {
@@ -209,7 +213,7 @@
   justify-content: space-evenly;
   height: auto;
   width: 35vw;
-  border: 2px solid #44d9ee;
+  border: 2px solid var(--secondary-color);
   border-radius: 15px;
 }
 
@@ -219,12 +223,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #fafafa;
+  color: var(--white-color);
   transition-duration: 0.3s;
 }
 
 .trauma__contact__item:hover {
-  color: #44d9ee;
+  color: var(--third-color);
 }
 
 .trauma__contact__icon {
@@ -237,6 +241,7 @@
 }
 
 @media screen and (max-width: 1700px) {
+  /* Section 2 */
   .trauma__section2 {
     height: 70vh;
   }
@@ -253,18 +258,20 @@
   .trauma__icon__p {
     font-size: 19px;
   }
+  
+  .trauma__item {
+    width: 19vw;
+  }
 
+  /* Section 3 */
   .trauma__approaches__p {
     font-size: 19px;
     padding: 0 10px;
   }
-
-  .trauma__item {
-    width: 19vw;
-  }
 }
 
 @media screen and (max-width: 1500px) {
+  /* Section 1 */
   .trauma__img {
     width: 340px;
   }
@@ -281,6 +288,7 @@
     font-size: 18px;
   }
 
+  /* Section 2 */
   .trauma__span {
     font-size: 22px;
   }
@@ -289,6 +297,7 @@
     font-size: 18px;
   }
 
+  /* Section 3 */
   .trauma__approaches__tittle {
     font-size: 25px;
   }
@@ -297,6 +306,7 @@
     font-size: 17px;
   }
 
+  /* Section 4 */
   .trauma__other__h2 {
     font-size: 43px;
   }
@@ -305,6 +315,7 @@
     font-size: 23px;
   }
 
+  /* Contact */
   .trauma__contact__icon {
     font-size: 33px;
   }
@@ -319,6 +330,7 @@
 }
 
 @media screen and (max-width: 1200px) {
+  /* Section 1 */
   .trauma__card {
     width: 95vw;
   }
@@ -339,6 +351,7 @@
     font-size: 16px;
   }
 
+  /* Section 2 */
   .trauma__icon__box {
     width: 95vw;
   }
@@ -359,10 +372,12 @@
     font-size: 18px;
   }
 
+  /* Section 3 */
   .trauma__approaches__tittle {
     font-size: 23px;
   }
 
+  /* Section 4 */
   .trauma__other__h2 {
     font-size: 35px;
   }
@@ -371,6 +386,7 @@
     font-size: 20px;
   }
 
+  /* Contact */
   .trauma__contact__icon {
     font-size: 31px;
   }
@@ -397,18 +413,8 @@
   }
 }
 
-@media screen and (max-width: 1100px) {
-  .trauma__other__img {
-    height: 100%;
-    width: 60vw;
-  }
-
-  .trauma__other {
-    margin-right: 6vw;
-  }
-}
-
 @media screen and (max-width: 900px) {
+  /* Section 1 */
   .trauma__img {
     height: 330px;
   }
@@ -425,6 +431,7 @@
     font-size: 15px;
   }
 
+  /* Section 2 */
   .trauma__section2 {
     height: 500px;
   }
@@ -446,6 +453,7 @@
     font-size: 16px;
   }
 
+  /* Section 3 */
   .trauma__section3 {
     height: 90vh;
   }
@@ -464,13 +472,9 @@
     padding: 0 3px;
   }
 
+  /* Section 4 */
   .trauma__section4 {
     height: 600px;
-  }
-
-  .trauma__other {
-    margin-right: 50px;
-    width: 300px;
   }
 
   .trauma__other__h2 {
@@ -483,6 +487,7 @@
 }
 
 @media screen and (max-width: 800px) {
+  /* Section 1 */
   .trauma__card {
     display: flex;
     flex-direction: column-reverse;
@@ -503,16 +508,7 @@
     margin-right: 0;
   }
 
-  .trauma__other__h2 {
-    font-size: 30px;
-  }
-
-  .trauma__other__p {
-    font-size: 18px;
-    width: 60vw;
-    height: auto;
-  }
-
+  /* Section 2 */
   .trauma__icon {
     height: 50px;
   }
@@ -526,6 +522,7 @@
     font-size: 15px;
   }
 
+  /* Section 3 */
   .trauma__section3 {
     height: 75vh;
   }
@@ -544,14 +541,9 @@
     padding: 0 3px;
   }
 
+  /* Section 4 */
   .trauma__section4 {
     height: 500px;
-  }
-
-  .trauma__other {
-    margin-right: 35px;
-    height: 280px;
-    width: 220px;
   }
 
   .trauma__other__img {
@@ -566,6 +558,7 @@
     font-size: 15px;
   }
 
+  /* Contact */
   .trauma__contact__container {
     width: 50vw;
   }
@@ -584,6 +577,7 @@
     --trauma4--backgronund-size: 150%;
   }
 
+  /* Section 1 */
   .trauma__section1 {
     margin-top: 100px;
     height: 650px;
@@ -597,6 +591,7 @@
     margin: 0;
   }
 
+  /* Section 2 */
   .trauma__section2 {
     height: 90vh;
     margin-top: 70px;
@@ -612,6 +607,7 @@
     width: 90vw;
   }
 
+  /* Section 3 */
   .trauma__section3 {
     height: 270vh;
     min-width: 100vw;
@@ -639,6 +635,7 @@
     font-size: 16px;
   }
 
+  /* Section 4 */
   .trauma__other__h2 {
     font-size: 28px;
   }
@@ -647,6 +644,7 @@
     font-size: 16px;
   }
 
+  /* Contact */
   .trauma__contact__container {
     width: 65vw;
   }
@@ -665,6 +663,7 @@
     --trauma4--backgronund-size: 200%;
   }
 
+  /* Section 1 */
   .trauma__section1 {
     margin-top: 140px;
   }
@@ -674,6 +673,7 @@
     width: 300px;
   }
 
+  /* Section 2 */
   .trauma__section2 {
     height: 120vh;
     margin-top: 70px;

@@ -1,6 +1,6 @@
-import airplane from '/airplane.png';
-import travel1 from '/section4(1).jpg';
-import travel2 from '/section4(2).jpg';
+import airplane from '/airplane.avif';
+import travel1 from '/section4(1).avif';
+import travel2 from '/section4(2).avif';
 import {airplaneAnimations} from '../framerMotionVariants';
 import {motion, useInView} from 'framer-motion';
 import {useRef} from 'react';

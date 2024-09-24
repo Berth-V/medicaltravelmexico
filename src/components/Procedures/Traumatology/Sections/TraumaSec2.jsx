@@ -1,6 +1,6 @@
-import spine from '/spine.png';
-import hip from '/hip.png';
-import fracture from '/fracture.png';
+import spine from '/spine.avif';
+import hip from '/hip.avif';
+import fracture from '/fracture.avif';
 import {motion} from 'framer-motion';
 
 function TraumaSec2() {
@@ -13,7 +13,7 @@ function TraumaSec2() {
     end: {
       opacity: 1,
       y: 0,
-      transition: {delay: 0.5, duration: 0.5},
+      transition: {delay: 0.6, duration: 0.5},
     },
   };
   return (

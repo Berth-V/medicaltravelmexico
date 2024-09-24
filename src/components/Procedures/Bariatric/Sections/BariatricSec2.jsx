@@ -1,6 +1,6 @@
-import gastricSleeve from '/gastric sleeve.png';
-import baipas from '/baipas.png';
-import biliopancreatic from '/biliopancreatic.png';
+import gastricSleeve from '/gastric sleeve.avif';
+import baipas from '/baipas.avif';
+import biliopancreatic from '/biliopancreatic.avif';
 import {motion} from 'framer-motion';
 
 function BariatricSec2() {

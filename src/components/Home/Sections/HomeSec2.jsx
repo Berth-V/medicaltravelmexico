@@ -1,7 +1,7 @@
-import bariatric from '/bariatric icon.png';
-import oto from '/oto icon.png';
-import plastic from '/plastic icon.png';
-import trauma from '/trauma icon.png';
+import bariatric from '/bariatric icon.avif';
+import oto from '/oto icon.avif';
+import plastic from '/plastic icon.avif';
+import trauma from '/trauma icon.avif';
 import {motion} from 'framer-motion';
 import {proceduresCardsAnimation} from '../framerMotionVariants';
 
